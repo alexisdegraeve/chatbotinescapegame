@@ -1,0 +1,135 @@
+.horror-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horror-typo {
+    font-family: ghastly;
+    font-size: 15rem;
+    background: -webkit-linear-gradient(#FF0800, #660000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+
+.skull {
+    font-family: skullx;
+    font-size: 12rem;
+    color: #ccc;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.luckyc {
+    font-family: luckycharms;
+    font-size: 12rem;
+    color: red;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 4s infinite;
+    -moz-animation: flickerAnimation 4s infinite;
+    -o-animation: flickerAnimation 4s infinite;
+    animation: flickerAnimation 4s infinite;
+}
+
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+
+@-webkit-keyframes rotating
+/* Safari and Chrome */
+
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .horror-typo {
+        font-size: 6rem;
+    }
+    .luckyc {
+        font-size: 4rem;
+    }
+}
