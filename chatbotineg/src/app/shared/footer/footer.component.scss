@@ -1,4 +1,10 @@
 .footer {
     color: #333;
     font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container {
+    z-index: 100;
 }
