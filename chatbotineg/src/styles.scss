@@ -15,8 +15,15 @@
     src: url(assets/font/luckycharms.ttf) format("opentype");
 }
 
+@font-face {
+    font-family: SuperMario256;
+    src: url(assets/font/SuperMario256.ttf) format("opentype");
+}
+
 body {
-    background-color: #000;
+    background: linear-gradient(135deg, #000 25%, transparent 25%), linear-gradient(225deg, #000 25%, transparent 25%), linear-gradient(315deg, #000 25%, transparent 25%), linear-gradient(45deg, #000 25%, transparent 25%);
+    background-size: 10rem 10rem;
+    background-color: #2c0202;
     color: #fff;
     font-size: 16px;
     overflow-x: hidden;
