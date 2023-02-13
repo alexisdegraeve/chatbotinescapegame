@@ -157,7 +157,7 @@ body {
 .title {
     font-family: SuperMario256;
     font-size: 10rem;
-    text-shadow: 5px 5px #fff;
+    text-shadow: 10px 10px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -166,18 +166,21 @@ body {
      :nth-child(2) {
         margin-top: -6rem;
     }
+    span {
+        -webkit-text-stroke: 3px #666;
+    }
 }
 
 .blue {
-    color: #029bd7;
+    color: #00b7ff;
 }
 
 .yellow {
-    color: #ffcd1e;
+    color: #ffc800;
 }
 
 .red {
-    color: #d9260b;
+    color: #ff2200;
 }
 
 .green {
