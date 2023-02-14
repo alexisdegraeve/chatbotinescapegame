@@ -1,24 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './main/main.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SharedModule } from '../shared/shared.module';
 import { ChatModule } from '../chat/chat.module';
+import { GameComponent } from './game/game.component';
+import { AboutComponent } from './about/about.component';
 
 
 
 @NgModule({
   declarations: [
-    MainComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    GameComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     ChatModule
-  ],
-  exports: [
-    MainComponent
   ]
 })
 export class EscapeGameModule { }

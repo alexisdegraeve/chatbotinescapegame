@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  showChatbot = false;
+
+  changeToggleChatbot(show: boolean) {
+    this.showChatbot = show;
+  }
+
+  @HostListener('document:click', ['$event']) onDocumentClick(event: Event) {
+    console.log('click outside');
+    if(this.showChatbot) {
+      console.log(this.showChatbot);
+      this.showChatbot = false;
+    }
+  }
 
 }
