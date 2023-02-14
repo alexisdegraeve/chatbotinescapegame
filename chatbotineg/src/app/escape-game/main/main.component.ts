@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -11,4 +11,6 @@ export class MainComponent {
   changeToggleChatbot(show: boolean) {
     this.showChatbot = show;
   }
+
+
 }

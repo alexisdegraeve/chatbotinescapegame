@@ -21,13 +21,6 @@ import { AfterViewInit, Component, Input, ViewChild, ViewEncapsulation } from '@
     )
   ],
 })
-export class ChatDialogComponent implements AfterViewInit{
-  @ViewChild('myIframe') public myIframe: any;
+export class ChatDialogComponent {
   @Input() show = false;
-
-
-  ngAfterViewInit() {
-    const iframDoc = this.myIframe.nativeElement.contentWindow.document;
-      iframDoc.head.appendChild('chat-dialog.component.scss');
-  }
 }
