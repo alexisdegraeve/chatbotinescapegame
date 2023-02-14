@@ -23,11 +23,4 @@ import { AfterViewInit, Component, EventEmitter, Input, Output, ViewChild, ViewE
 })
 export class ChatDialogComponent {
   @Input() show = false;
-  @Output() showEmitter = new EventEmitter();
-
-  closePanel() {
-    this.show = false;
-    this.showEmitter.emit(this.show);
-  }
-
 }

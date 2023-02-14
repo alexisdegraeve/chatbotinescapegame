@@ -8,18 +8,8 @@
 }
 
 .chatbot-button {
-    border-radius: 50%;
-    background: #ddd;
-    padding: 0.25rem;
-    border: 1px solid black;
-    cursor: pointer;
-    .icon {
-        width: 2rem;
-        color: #fff;
-    }
-    &:hover {
-        background-color: red;
-        border-color: red;
-        transition: background-color 0.5s ease;
+    img {
+        width: 1.5rem;
+        height: 2rem;
     }
 }

@@ -1,14 +1,21 @@
 .panel-chat {
     background-color: #0f0f0f;
     width: 400px;
-    height: calc(100% - 4rem);
     position: absolute;
-    top: 3.6rem;
+    bottom: 0;
+    top: 4.6rem;
     right: 0;
+    overflow-y: hidden;
+    z-index: 200;
 }
 
 #myframe {
     width: 100%;
     height: 100%;
-    z-index: 200;
+}
+
+@media only screen and (max-width: 800px) {
+    .panel-chat {
+        width: 100%;
+    }
 }

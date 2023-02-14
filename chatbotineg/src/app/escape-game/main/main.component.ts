@@ -20,7 +20,4 @@ export class MainComponent {
     }
   }
 
-  hideChatbot(hide: boolean) {
-    this.showChatbot = hide;
-  }
 }
