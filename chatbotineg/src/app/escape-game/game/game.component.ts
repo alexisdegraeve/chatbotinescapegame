@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class GameComponent {
   showInfo = true;
+  startgame = false;
 
   closeInfo() {
     this.showInfo = false;
     console.log('START GAME');
+    this.startgame = true;
   }
 }

@@ -7,6 +7,7 @@ import { GameComponent } from './game/game.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 import { InfoComponent } from './game/info/info.component';
+import { TimerComponent } from './game/timer/timer.component';
 
 
 
@@ -15,7 +16,8 @@ import { InfoComponent } from './game/info/info.component';
     WelcomeComponent,
     GameComponent,
     AboutComponent,
-    InfoComponent
+    InfoComponent,
+    TimerComponent
   ],
   imports: [
     CommonModule,
