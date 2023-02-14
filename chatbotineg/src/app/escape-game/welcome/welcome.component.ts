@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent {
-  startGame() {
 
-  }
 }
