@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { AfterViewInit, Component, Input, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, Output, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-chat-dialog',
@@ -23,4 +23,11 @@ import { AfterViewInit, Component, Input, ViewChild, ViewEncapsulation } from '@
 })
 export class ChatDialogComponent {
   @Input() show = false;
+  @Output() showEmitter = new EventEmitter();
+
+  closePanel() {
+    this.show = false;
+    this.showEmitter.emit(this.show);
+  }
+
 }

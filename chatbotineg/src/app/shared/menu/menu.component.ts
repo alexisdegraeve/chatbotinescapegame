@@ -9,7 +9,8 @@ export class MenuComponent {
   showChatbot = false;
   @Output() toggle = new EventEmitter();
 
-  toggleChatbot() {
+  toggleChatbot(event: Event) {
+    event.stopPropagation();
     this.showChatbot = !this.showChatbot;
     this.toggle.emit(this.showChatbot);
   }

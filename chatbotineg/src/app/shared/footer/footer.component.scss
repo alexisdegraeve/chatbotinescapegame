@@ -1,12 +1,15 @@
 .footer {
-    color: #999;
+    color: #ccc;
     font-size: 12px;
+    margin: 0;
 }
 
 .footer-container {
     z-index: 100;
     position: absolute;
-    bottom: 1rem;
-    left: 40%;
-    right: 40%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

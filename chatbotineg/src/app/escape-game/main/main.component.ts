@@ -12,5 +12,15 @@ export class MainComponent {
     this.showChatbot = show;
   }
 
+  @HostListener('document:click', ['$event']) onDocumentClick(event: Event) {
+    console.log('click outside');
+    if(this.showChatbot) {
+      console.log(this.showChatbot);
+      this.showChatbot = false;
+    }
+  }
 
+  hideChatbot(hide: boolean) {
+    this.showChatbot = hide;
+  }
 }
