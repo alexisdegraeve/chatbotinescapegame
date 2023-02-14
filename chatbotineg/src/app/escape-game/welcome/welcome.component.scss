@@ -138,12 +138,18 @@ body {
     background-color: #000;
 }
 
-.eclipse {
+.eclipse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     position: absolute;
-    top: calc(50% - 5px);
-    left: calc(50% - 150px);
-    width: 300px;
-    height: 300px;
+}
+
+.eclipse {
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     animation: mymove 5s infinite;
     display: flex;
@@ -199,7 +205,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .title {
-        font-size: 6rem;
+        font-size: 5.5rem;
          :nth-child(2) {
             margin-top: -3rem;
         }
