@@ -13,8 +13,8 @@ export class AppComponent {
   }
 
   @HostListener('document:click', ['$event']) onDocumentClick(event: Event) {
-    console.log('click outside');
     if(this.showChatbot) {
+      console.log('click outside');
       console.log(this.showChatbot);
       this.showChatbot = false;
     }

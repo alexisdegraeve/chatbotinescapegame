@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
+  showInfo = true;
 
+  closeInfo() {
+    this.showInfo = false;
+    console.log('START GAME');
+  }
 }

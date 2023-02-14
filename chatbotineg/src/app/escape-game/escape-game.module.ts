@@ -6,6 +6,7 @@ import { ChatModule } from '../chat/chat.module';
 import { GameComponent } from './game/game.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
+import { InfoComponent } from './game/info/info.component';
 
 
 
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     WelcomeComponent,
     GameComponent,
-    AboutComponent
+    AboutComponent,
+    InfoComponent
   ],
   imports: [
     CommonModule,
