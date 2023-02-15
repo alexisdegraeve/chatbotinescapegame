@@ -1,0 +1,58 @@
+.porte_hobbit {
+    height: 461px;
+    width: 548px;
+    background-image: url(/assets/img/porte_hobbit.png);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px #fff, inset 0 0 8px #fff;
+    }
+    50% {
+        box-shadow: 0 0 16px #fff, inset 0 0 14px #ea4c89;
+    }
+    100% {
+        box-shadow: 0 0 8px #fff, inset 0 0 8px #ea4c89;
+    }
+}
+
+.inner {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+.inner p {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: #ea4c89;
+    text-shadow: 0 0 4px #ea4c89;
+}
+
+.circle {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    /* margin: 30px; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 4px #747DE8;
+    animation: glow 1.5s linear infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px #535FED;
+    }
+}

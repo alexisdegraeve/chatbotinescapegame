@@ -1,6 +1,9 @@
-<app-timer></app-timer>
+<app-timer [starttimer]="starttimer" (starttimerEvent)="stopTimer()"></app-timer>
 
 <div class="score">
     SCORE: 000
 </div>
 <app-info (closeInfoEvent)="closeInfo()" [show]="showInfo"></app-info>
+<button *ngIf="starttimer" class="btn btn-primary btn-lg" type="button" (click)="stopGame()">Stop</button>
+
+<app-room1 *ngIf="startgame"></app-room1>

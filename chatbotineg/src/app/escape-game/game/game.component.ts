@@ -8,10 +8,22 @@ import { Component } from '@angular/core';
 export class GameComponent {
   showInfo = true;
   startgame = false;
+  starttimer = false;
 
   closeInfo() {
     this.showInfo = false;
     console.log('START GAME');
     this.startgame = true;
+    this.starttimer = true;
+  }
+
+  stopTimer() {
+    console.log('Timer STOP');
+  }
+
+  stopGame() {
+    this.startgame = false;
+    this.starttimer = false;
+    this.showInfo = true;
   }
 }

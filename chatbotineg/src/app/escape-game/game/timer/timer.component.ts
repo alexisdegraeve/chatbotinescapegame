@@ -1,26 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-timer',
   templateUrl: './timer.component.html',
   styleUrls: ['./timer.component.scss'],
 })
-export class TimerComponent implements OnInit {
-  maxmin = 20;
+export class TimerComponent implements OnInit, OnDestroy {
+
+  maxmin = 1;
   hour = 0;
   min = 0;
   sec = 0;
-  clockstart = true;
+  @Input() starttimer = false;
+  @Output() starttimerEvent = new EventEmitter();
   currentDate = new Date();
   id: any;
 
   ngOnInit() {
     this.resetDateTime();
     this.id = setInterval(() => {
-      if((this.currentDate.getMinutes() == 0) && this.currentDate.getSeconds() ==0) {
-        this.stopTimer();
-      }else {
-        this.refreshTime();
+      if(this.starttimer) {
+        if((this.currentDate.getMinutes() == 0) && this.currentDate.getSeconds() ==0) {
+          this.stopTimer();
+        }else {
+          this.refreshTime();
+        }
       }
     }, 1000);
   }
@@ -43,6 +47,12 @@ export class TimerComponent implements OnInit {
   stopTimer () {
     if (this.id) {
       clearInterval(this.id);
+      this.resetDateTime();
+      this.starttimerEvent.emit(false);
     }
+  }
+
+  ngOnDestroy(): void {
+    this.stopTimer();
   }
 }
