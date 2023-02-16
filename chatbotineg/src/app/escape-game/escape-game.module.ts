@@ -10,6 +10,7 @@ import { InfoComponent } from './game/info/info.component';
 import { TimerComponent } from './game/timer/timer.component';
 import { Room1Component } from './game/room1/room1.component';
 import { Enigme1Component } from './game/room1/enigme1/enigme1.component';
+import { SimonComponent } from './game/room1/enigme1/simon/simon.component';
 
 
 
@@ -21,7 +22,8 @@ import { Enigme1Component } from './game/room1/enigme1/enigme1.component';
     InfoComponent,
     TimerComponent,
     Room1Component,
-    Enigme1Component
+    Enigme1Component,
+    SimonComponent
   ],
   imports: [
     CommonModule,
