@@ -1,0 +1,24 @@
+.score {
+    font-family: digital-7;
+    font-size: 40px;
+    margin-left: 3.5rem;
+}
+
+.information-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    padding: 0.25rem;
+}
+
+.room {
+    background-color: black;
+    border: 2px solid #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotate(-10deg);
+    margin-left: 2rem;
+}

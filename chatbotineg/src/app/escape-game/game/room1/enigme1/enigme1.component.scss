@@ -1,3 +1,12 @@
+.enigme1 {
+    background-color: #6fc9e7;
+    height: calc(100% - 142px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
+}
+
 .porte_hobbit {
     height: 461px;
     width: 548px;
@@ -7,6 +16,25 @@
     margin-right: auto;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
+    position: absolute;
+    bottom: 4rem;
+}
+
+.full-grass {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+.grass2 {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    background-size: initial;
+    background-image: url(/assets/img/grass2.png);
 }
 
 @-webkit-keyframes pulse {

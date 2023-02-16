@@ -1,4 +1,7 @@
-<app-menu (toggle)="changeToggleChatbot($event)"></app-menu>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="screen">
+    <app-menu (toggle)="changeToggleChatbot($event)"></app-menu>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>
+
 <app-chat-dialog [show]="showChatbot"></app-chat-dialog>

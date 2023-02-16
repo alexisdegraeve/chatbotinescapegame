@@ -14,7 +14,7 @@ export class GameComponent {
     this.showInfo = false;
     console.log('START GAME');
     this.startgame = true;
-    this.starttimer = true;
+    /* this.starttimer = true; */
   }
 
   stopTimer() {
