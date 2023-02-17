@@ -1,0 +1,198 @@
+.addition {
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .totalnb {
+        width: 10rem !important;
+    }
+    div {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.sink_green {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    left: 0rem;
+    top: 18rem;
+    transform: rotate(90deg);
+}
+
+.chest {
+    display: flex;
+    background-image: url(/assets/img/chest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    bottom: 2rem;
+    right: 15rem;
+    position: absolute;
+}
+
+.goomba {
+    display: flex;
+    background-image: url(/assets/img/goomba.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+}
+
+.mushroom_bee {
+    display: flex;
+    background-image: url(/assets/img/mushroom_bee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+}
+
+.star {
+    display: flex;
+    background-image: url(/assets/img/star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+}
+
+.enigme3 {
+    background-color: #6fc9e7;
+    height: calc(100% - 142px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
+}
+
+.porte_hobbit {
+    height: 461px;
+    width: 548px;
+    background-image: url(/assets/img/porte_hobbit.png);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(0 5px 5px #222);
+    filter: drop-shadow(0 5px 5px #222);
+    position: absolute;
+    bottom: 4rem;
+}
+
+.porte {
+    height: 461px;
+    width: 548px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.porte_hobbit_cadre {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/img/porte_hobbit_cadre.png);
+    -webkit-filter: drop-shadow(0 5px 5px #222);
+    filter: drop-shadow(0 5px 5px #222);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.porte_hobbit_interieur {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/img/porte_hobbit_interieur.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: rotateY(0deg);
+    transform-origin: 450px 350px;
+}
+
+.full-grass {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+.grass2 {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    background-size: initial;
+    background-image: url(/assets/img/grass2.png);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px #fff, inset 0 0 8px #fff;
+    }
+    50% {
+        box-shadow: 0 0 16px #fff, inset 0 0 14px #ea4c89;
+    }
+    100% {
+        box-shadow: 0 0 8px #fff, inset 0 0 8px #ea4c89;
+    }
+}
+
+.inner {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+.inner p {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: #ea4c89;
+    text-shadow: 0 0 4px #ea4c89;
+}
+
+.circle {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    /* margin: 30px; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 4px #747DE8;
+    animation: glow 1.5s linear infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px #535FED;
+    }
+}
+
+.simon {
+    align-self: flex-start;
+}

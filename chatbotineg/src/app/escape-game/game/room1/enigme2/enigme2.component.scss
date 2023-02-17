@@ -23,6 +23,24 @@
     position: absolute;
 }
 
+.star_eye1 {
+    display: flex;
+    background-image: url(/assets/img/star_eye_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
+.star_eye2 {
+    display: flex;
+    background-image: url(/assets/img/star_eye_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
 .enigme2 {
     background-color: #6fc9e7;
     height: calc(100% - 142px);

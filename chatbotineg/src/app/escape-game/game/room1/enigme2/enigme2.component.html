@@ -2,6 +2,13 @@
     <div class="sink_green"></div>
     <div class="chest"></div>
 
+
+    <div *ngFor="let item of [].constructor(10); let i = index">
+        <div *ngFor="let item of [].constructor(10); let j = index" [ngClass]="(i==2 && j==1) ? 'star_eye2' : 'star_eye1' ">
+        </div>
+    </div>
+
+
     <div class="full-grass">
         <div class="grass2"></div>
     </div>
