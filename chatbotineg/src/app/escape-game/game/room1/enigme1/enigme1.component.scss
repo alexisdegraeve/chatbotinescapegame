@@ -67,6 +67,18 @@
     background-image: url(/assets/img/grass2.png);
 }
 
+.sink_green {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
+}
+
 @-webkit-keyframes pulse {
     0% {
         box-shadow: 0 0 8px #fff, inset 0 0 8px #fff;
