@@ -20,6 +20,36 @@
     bottom: 4rem;
 }
 
+.porte {
+    height: 461px;
+    width: 548px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.porte_hobbit_cadre {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/img/porte_hobbit_cadre.png);
+    -webkit-filter: drop-shadow(0 5px 5px #222);
+    filter: drop-shadow(0 5px 5px #222);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.porte_hobbit_interieur {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/img/porte_hobbit_interieur.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: rotateY(0deg);
+    transform-origin: 450px 350px;
+}
+
 .full-grass {
     height: 300px;
     width: 100%;
@@ -86,5 +116,5 @@
 }
 
 .simon {
-    margin-bottom: 30rem;
+    align-self: flex-start;
 }
