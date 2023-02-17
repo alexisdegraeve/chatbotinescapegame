@@ -1,3 +1,28 @@
+.sink_green {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    left: 10rem;
+    top: 4.6rem;
+    transform: scaleY(-1);
+}
+
+.chest {
+    display: flex;
+    background-image: url(/assets/img/chest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    bottom: 2rem;
+    right: 15rem;
+    position: absolute;
+}
+
 .enigme2 {
     background-color: #6fc9e7;
     height: calc(100% - 142px);
