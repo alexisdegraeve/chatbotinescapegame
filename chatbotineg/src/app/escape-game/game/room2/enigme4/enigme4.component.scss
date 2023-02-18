@@ -1,3 +1,9 @@
+.matches-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pos-1 {
     position: absolute;
     left: 5rem;
@@ -27,6 +33,83 @@
 .pos-5 {
     position: absolute;
     left: 16rem;
+    margin-top: 24rem;
+}
+
+.pos-6 {
+    position: absolute;
+    left: 26rem;
+    margin-top: 12rem;
+}
+
+.pos-7 {
+    position: absolute;
+    left: 26rem;
+    margin-top: 12rem;
+    transform: rotate(90deg);
+}
+
+.pos-8 {
+    position: absolute;
+    left: 45rem;
+}
+
+.pos-9 {
+    position: absolute;
+    left: 39rem;
+    margin-bottom: 10rem;
+    transform: rotate(90deg);
+}
+
+.pos-10 {
+    position: absolute;
+    left: 45rem;
+    margin-top: 24rem;
+}
+
+.pos-11 {
+    position: absolute;
+    left: 56rem;
+    margin-top: 12rem;
+    transform: rotate(90deg);
+}
+
+.pos-12 {
+    position: absolute;
+    left: 56rem;
+    margin-top: 17rem;
+    transform: rotate(90deg);
+}
+
+.pos-13 {
+    position: absolute;
+    left: 76rem;
+}
+
+.pos-14 {
+    position: absolute;
+    left: 71rem;
+    margin-bottom: 10rem;
+    transform: rotate(90deg);
+}
+
+.pos-15 {
+    position: absolute;
+    left: 71rem;
+    margin-top: 12rem;
+    transform: rotate(90deg);
+}
+
+.pos-16 {
+    position: absolute;
+    left: 71rem;
+    margin-top: 36rem;
+    transform: rotate(90deg);
+}
+
+.pos-17 {
+    position: absolute;
+    left: 65rem;
     margin-top: 24rem;
 }
 
