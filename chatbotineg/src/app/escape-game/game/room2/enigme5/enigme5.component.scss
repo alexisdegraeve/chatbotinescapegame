@@ -210,6 +210,7 @@
     left: 10rem;
     top: 4.6rem;
     transform: scaleY(-1);
+    filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
 }
 
 .chest {
@@ -230,7 +231,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
+    background: linear-gradient(#040837, #2a4891, #1a326e 80%, #042476 100%);
 }
 
 .porte_hobbit {
@@ -283,6 +284,7 @@
     align-items: flex-end;
     position: absolute;
     bottom: 0;
+    background: linear-gradient(to bottom, #1d3876, #042476 100%);
 }
 
 .grass2 {
@@ -291,6 +293,7 @@
     display: flex;
     background-size: initial;
     background-image: url(/assets/img/grass2.png);
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
 }
 
 @-webkit-keyframes pulse {
