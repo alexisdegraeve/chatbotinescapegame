@@ -1,3 +1,28 @@
+.container-player {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-player {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    width: 8rem;
+    height: 10rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mushroom,
+    .bowser,
+    .mario {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+
 .case-parking {
     display: flex;
     flex-direction: column;
@@ -65,8 +90,7 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 5rem;
-    /* left: 25rem; */
+    left: 25rem;
     bottom: 6rem;
 }
 
@@ -82,7 +106,7 @@
     bottom: 1rem;
     z-index: 25;
     left: 0rem;
-    /*left: 20rem; */
+    left: 20rem;
     bottom: 6rem;
 }
 
@@ -273,6 +297,21 @@
     top: 4.6rem;
     transform: scaleY(-1);
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
+}
+
+.panel_exit {
+    display: flex;
+    background-image: url(/assets/img/exit_red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 5rem;
+    z-index: 30;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .sink_red {
