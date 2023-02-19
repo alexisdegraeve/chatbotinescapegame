@@ -10,16 +10,52 @@ export class SimonComponent {
   public animateBox2 = false;
   public animateBox3 = false;
   public animateBox4 = false;
+  melody = new Array<number>();
+
+  playGame() {
+    this.initMelody();
+  }
+
+  initMelody() {
+    if(this.melody.length > 10) {
+       this.melody = [];
+    }
+    let nb = this.getRandomInt(4) + 1;
+    this.melody.push(nb);
+
+    console.log(this.melody);
+    this.playAudio();
+  }
 
   playAudio() {
-    this.resetAnimateBox();
-    let nb = this.getRandomInt(4) + 1;
-    let audio = new Audio();
-    console.log(nb);
-    audio.src = `/assets/sound/simonSound${nb}.mp3`;
-    audio.load();
-    audio.play();
 
+    let cpt = (this.melody.length) - 1;
+    let intervalId = setInterval(() => {
+        this.resetAnimateBox();
+        if(cpt === -1 ) {
+          clearInterval(intervalId);
+        } else {
+          let nb = this.melody[cpt];
+          this.switchAnimateBox(nb);
+          let audio = new Audio();
+          audio.src = `/assets/sound/simonSound${nb}.mp3`;
+          audio.load();
+          audio.play();
+          cpt = cpt - 1;
+        }
+
+    }, 1500);
+  }
+
+
+  resetAnimateBox() {
+    this.animateBox1 = false;
+    this.animateBox2 = false;
+    this.animateBox3 = false;
+    this.animateBox4 = false;
+  }
+
+  switchAnimateBox(nb: number) {
     switch (nb) {
       case 1:
         this.animateBox1 = true;
@@ -36,19 +72,6 @@ export class SimonComponent {
       default:
         break;
     }
-
-    // setTimeout(() => {
-    //   audio.src = "/assets/sound/simonSound2.mp3";
-    //   audio.load();
-    //   audio.play();
-    // }, 1500);
-  }
-
-  resetAnimateBox() {
-    this.animateBox1 = false;
-    this.animateBox2 = false;
-    this.animateBox3 = false;
-    this.animateBox4 = false;
   }
 
   getRandomInt(max: number) {
