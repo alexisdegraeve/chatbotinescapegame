@@ -11,28 +11,34 @@ export class SimonComponent {
   public animateBox3 = false;
   public animateBox4 = false;
   melody = new Array<number>();
+  melodyPlayer = new Array<number>();
+  canPlay = true;
+  currentNote = 0;
 
   playGame() {
-    this.initMelody();
-  }
-
-  initMelody() {
-    if(this.melody.length > 10) {
-       this.melody = [];
-    }
-    let nb = this.getRandomInt(4) + 1;
-    this.melody.push(nb);
-
-    console.log(this.melody);
+    this.canPlay = true;
+    this.currentNote = 0;
+    this.melody = [];
+    this.melodyPlayer = [];
+    this.fillMelody();
     this.playAudio();
   }
 
-  playAudio() {
+  fillMelody() {
+    this.melody = [];
+    for (let index = 0; index < 4; index++) {
+      let nb = this.getRandomInt(4) + 1;
+      this.melody.push(nb);
+    }
+  }
 
-    let cpt = (this.melody.length) - 1;
+  playAudio() {
+    this.canPlay = false;
+    let cpt = 0;
     let intervalId = setInterval(() => {
         this.resetAnimateBox();
-        if(cpt === -1 ) {
+        if(cpt === this.melody.length) {
+          this.canPlay = true;
           clearInterval(intervalId);
         } else {
           let nb = this.melody[cpt];
@@ -41,10 +47,10 @@ export class SimonComponent {
           audio.src = `/assets/sound/simonSound${nb}.mp3`;
           audio.load();
           audio.play();
-          cpt = cpt - 1;
+          cpt = cpt + 1;
         }
 
-    }, 1500);
+    }, 1000);
   }
 
 
@@ -76,5 +82,31 @@ export class SimonComponent {
 
   getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
+  }
+
+  playCase(num: number) {
+      this.resetAnimateBox();
+      this.switchAnimateBox(num);
+      let audio = new Audio();
+      audio.src = `/assets/sound/simonSound${num}.mp3`;
+      audio.load();
+      audio.play();
+      this.melodyPlayer.push(num);
+
+      if(this.checkNoteOk()) {
+        this.currentNote++;
+        if(this.melody.length === this.melodyPlayer.length) {
+          console.log('GAGNE');
+        }
+
+      } else {
+          // Perdu on recommence
+         console.log('PERDU');
+         this.playGame();
+     }
+  }
+
+  checkNoteOk() {
+    return this.melodyPlayer[this.currentNote]  === this.melody[this.currentNote];
   }
 }
