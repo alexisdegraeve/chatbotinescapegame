@@ -5,7 +5,6 @@ import { SharedModule } from '../shared/shared.module';
 import { ChatModule } from '../chat/chat.module';
 import { GameComponent } from './game/game.component';
 import { AboutComponent } from './about/about.component';
-import { RouterModule } from '@angular/router';
 import { InfoComponent } from './game/info/info.component';
 import { TimerComponent } from './game/timer/timer.component';
 import { Room1Component } from './game/room1/room1.component';
@@ -17,6 +16,7 @@ import { Room2Component } from './game/room2/room2.component';
 import { Enigme4Component } from './game/room2/enigme4/enigme4.component';
 import { Enigme5Component } from './game/room2/enigme5/enigme5.component';
 import { Enigme6Component } from './game/room2/enigme6/enigme6.component';
+import { GameService } from './game/game.service';
 
 
 
@@ -41,6 +41,9 @@ import { Enigme6Component } from './game/room2/enigme6/enigme6.component';
     CommonModule,
     SharedModule,
     ChatModule
+  ],
+  providers: [
+    GameService
   ]
 })
 export class EscapeGameModule { }

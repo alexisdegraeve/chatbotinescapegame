@@ -1,5 +1,6 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-enigme1',
@@ -17,12 +18,22 @@ import { Component } from '@angular/core';
   ],
 })
 export class Enigme1Component {
-  showSimon = false;
-  mountain = true;
 
   moveMountain() {
-    this.mountain = false;
-    this.showSimon = true;
+    this.gameService.mountain = false;
+    this.gameService.showSimon = true;
+  }
+
+  constructor(private gameService: GameService) {
+
+  }
+
+  getMountain() {
+    return this.gameService.mountain;
+  }
+
+  getShowSimon() {
+    return this.gameService.showSimon;
   }
 
 }

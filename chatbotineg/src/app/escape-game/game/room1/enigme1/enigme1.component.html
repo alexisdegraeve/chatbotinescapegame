@@ -1,9 +1,9 @@
 <div class="enigme1">
     <div class="simon">
-        <app-simon [showSimon]="showSimon"></app-simon>
+        <app-simon [showSimon]="getShowSimon()"></app-simon>
     </div>
 
-    <div class="mountain" (click)="moveMountain()" *ngIf="mountain" [@enterAnimation]></div>
+    <div class="mountain" (click)="moveMountain()" *ngIf="getMountain()" [@enterAnimation]></div>
     <div class="porte">
         <div class="porte_hobbit_cadre"></div>
         <div class="porte_hobbit_interieur"></div>
