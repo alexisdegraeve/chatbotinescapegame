@@ -7,6 +7,35 @@
     background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
 }
 
+.roue {
+    left: 5rem;
+    height: 230px;
+    width: 230px;
+    background-image: url(/assets/img/roue.png);
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: auto;
+    background-size: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 5px 5px #222);
+    position: absolute;
+    bottom: 15rem;
+    cursor: pointer;
+    &.rotate {
+        animation: rotation 2s forwards linear;
+        transform-origin: center center;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 .porte_hobbit {
     height: 461px;
     width: 548px;

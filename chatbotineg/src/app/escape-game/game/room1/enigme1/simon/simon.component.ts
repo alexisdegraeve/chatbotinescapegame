@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-simon',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./simon.component.scss'],
 })
 export class SimonComponent {
+  @Input() showplay = false;
   public animateBox1 = false;
   public animateBox2 = false;
   public animateBox3 = false;
