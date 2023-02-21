@@ -1,3 +1,11 @@
+.btn-play {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 50;
+    filter: drop-shadow(0 2px 2px #222);
+    font-size: 24px;
+}
+
 .cordes {
     display: flex;
 }

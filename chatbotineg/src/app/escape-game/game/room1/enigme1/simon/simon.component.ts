@@ -22,7 +22,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SimonComponent {
   @Input()showSimon = false;
-  @Input()showplay = true;
   public animateBox1 = false;
   public animateBox2 = false;
   public animateBox3 = false;
@@ -31,14 +30,20 @@ export class SimonComponent {
   melodyPlayer = new Array<number>();
   canPlay = true;
   currentNote = 0;
+  start = false;
 
   playGame() {
+    this.start = true;
     this.canPlay = true;
     this.currentNote = 0;
     this.melody = [];
     this.melodyPlayer = [];
     this.fillMelody();
     this.playAudio();
+  }
+
+  stopGame() {
+    this.start = false;
   }
 
   fillMelody() {
