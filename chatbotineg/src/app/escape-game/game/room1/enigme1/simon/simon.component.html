@@ -1,11 +1,18 @@
-<div class="simon" [class.dontplay]="!canPlay">
-    <button class="btn btn-primary btn-lg" type="button" (click)="playGame()" *ngIf="showplay">Play</button>
-    <div class="row">
-        <div class="square" style="color:green" [class.animate]="animateBox1" (click)="playCase(1)"></div>
-        <div class="square" style="color:red" [class.animate]="animateBox2" (click)="playCase(2)"></div>
+<div *ngIf="showSimon" [@enterAnimation]>
+    <div class="cordes">
+        <div class="corde-left"></div>
+        <div class="corde-right"></div>
     </div>
-    <div class="row">
-        <div class="square" style="color:yellow" [class.animate]="animateBox3" (click)="playCase(3)"></div>
-        <div class="square" style="color:blue" [class.animate]="animateBox4" (click)="playCase(4)"></div>
+
+    <div class="simon" [class.dontplay]="!canPlay">
+        <button class="btn btn-primary btn-lg" type="button" (click)="playGame()" *ngIf="showplay">Play</button>
+        <div class="row">
+            <div class="square" style="color:green" [class.animate]="animateBox1" (click)="playCase(1)"></div>
+            <div class="square" style="color:red" [class.animate]="animateBox2" (click)="playCase(2)"></div>
+        </div>
+        <div class="row">
+            <div class="square" style="color:yellow" [class.animate]="animateBox3" (click)="playCase(3)"></div>
+            <div class="square" style="color:blue" [class.animate]="animateBox4" (click)="playCase(4)"></div>
+        </div>
     </div>
 </div>

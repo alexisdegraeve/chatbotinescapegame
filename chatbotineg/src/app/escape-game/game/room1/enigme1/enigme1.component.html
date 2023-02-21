@@ -1,10 +1,10 @@
 <div class="enigme1">
 
     <div class="simon">
-        <app-simon [showplay]="playSimon"></app-simon>
+        <app-simon [showSimon]="showSimon"></app-simon>
     </div>
 
-    <div class="roue" (click)="spinWheel()" [class.rotate]="rotateWheel"></div>
+    <div class="mountain" (click)="moveMountain()" *ngIf="mountain" [@enterAnimation]></div>
     <div class="porte">
         <div class="porte_hobbit_cadre"></div>
         <div class="porte_hobbit_interieur"></div>

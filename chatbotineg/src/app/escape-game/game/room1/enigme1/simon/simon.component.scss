@@ -1,3 +1,24 @@
+.cordes {
+    display: flex;
+}
+
+.corde-left {
+    width: 1.5rem;
+    height: 4rem;
+    background-color: #333;
+    margin-left: 15px;
+    filter: drop-shadow(0 5px 5px #222);
+}
+
+.corde-right {
+    width: 1.5rem;
+    height: 4rem;
+    background-color: #333;
+    margin-left: auto;
+    margin-right: 15px;
+    filter: drop-shadow(0 5px 5px #222);
+}
+
 .simon {
     display: flex;
     justify-content: center;
@@ -9,6 +30,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 10px;
+    filter: drop-shadow(0 5px 5px #222);
     .row {
         display: flex;
         align-items: center;
@@ -25,6 +47,7 @@
     border-radius: 10px;
     margin: 6px;
     cursor: pointer;
+    filter: drop-shadow(0 2px 2px #222);
     &.animate {
         animation: mymove 1s reverse;
     }
