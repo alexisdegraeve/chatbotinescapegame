@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { InformationBarComponent } from './information-bar/information-bar.component';
+import { GameService } from '../escape-game/game/game.service';
 
 
 
@@ -22,6 +23,9 @@ import { InformationBarComponent } from './information-bar/information-bar.compo
     FooterComponent,
     InformationBarComponent,
     RouterModule
+  ],
+  providers: [
+    GameService
   ]
 })
 export class SharedModule { }

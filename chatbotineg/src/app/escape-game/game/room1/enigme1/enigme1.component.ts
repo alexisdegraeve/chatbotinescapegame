@@ -22,6 +22,7 @@ export class Enigme1Component {
   moveMountain() {
     this.gameService.mountain = false;
     this.gameService.showSimon = true;
+    this.gameService.score = 200;
   }
 
   constructor(private gameService: GameService) {

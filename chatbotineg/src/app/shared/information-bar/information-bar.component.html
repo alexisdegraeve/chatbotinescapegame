@@ -3,12 +3,10 @@
         ROOM 1
     </div>
     <div class="score">
-        SCORE: 000
+        SCORE: {{ score }}
     </div>
     <div class="enigmes">
         ENIGMES:
-        <div class="key"></div>
-        <div class="key notfound"></div>
-        <div class="key notfound"></div>
+        <div class="key" *ngFor="let enigme of enigmes" [class.notfound]="!enigme"></div>
     </div>
 </div>
