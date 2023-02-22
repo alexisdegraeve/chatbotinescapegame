@@ -24,6 +24,19 @@
     }
 }
 
+.sink_green2 {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 140px;
+    position: absolute;
+    right: 10rem;
+    bottom: 0rem;
+    z-index: 20;
+}
+
 .sink_green {
     display: flex;
     background-image: url(/assets/img/sink_green.png);
@@ -32,9 +45,9 @@
     height: 200px;
     width: 150px;
     position: absolute;
-    left: 0rem;
-    top: 18rem;
-    transform: rotate(90deg);
+    left: 10rem;
+    top: 4.6rem;
+    transform: scaleY(-1);
 }
 
 .chest {

@@ -347,3 +347,16 @@
 .simon {
     align-self: flex-start;
 }
+
+.sink_green2 {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 140px;
+    position: absolute;
+    right: 10rem;
+    bottom: 0rem;
+    z-index: 20;
+}
