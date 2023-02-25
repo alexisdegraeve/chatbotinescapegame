@@ -1,3 +1,4 @@
+@import url('./../../../../../scss/sprites.scss');
 .addition {
     font-size: 4rem;
     font-weight: bold;
@@ -25,23 +26,16 @@
 }
 
 .sink_green2 {
-    display: flex;
-    background-image: url(/assets/img/sink_green.png);
-    background-repeat: no-repeat;
     background-size: contain;
     height: 350px;
     width: 140px;
     position: absolute;
     right: 10rem;
     bottom: 0rem;
-    z-index: 20;
+    z-index: 0;
 }
 
-.sink_green {
-    display: flex;
-    background-image: url(/assets/img/sink_green.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.sink_green1 {
     height: 200px;
     width: 150px;
     position: absolute;

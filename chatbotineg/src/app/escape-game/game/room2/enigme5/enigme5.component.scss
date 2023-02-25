@@ -199,11 +199,7 @@
     }
 }
 
-.sink_green {
-    display: flex;
-    background-image: url(/assets/img/sink_green.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.sink_green1 {
     height: 200px;
     width: 150px;
     position: absolute;
@@ -211,6 +207,16 @@
     top: 4.6rem;
     transform: scaleY(-1);
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
+}
+
+.sink_green2 {
+    height: 350px;
+    width: 140px;
+    position: absolute;
+    right: 10rem;
+    bottom: 0rem;
+    z-index: 0;
+    background-size: contain;
 }
 
 .chest {
@@ -284,7 +290,6 @@
     align-items: flex-end;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to bottom, #1d3876, #042476 100%);
 }
 
 .grass2 {
@@ -346,17 +351,4 @@
 
 .simon {
     align-self: flex-start;
-}
-
-.sink_green2 {
-    display: flex;
-    background-image: url(/assets/img/sink_green.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 350px;
-    width: 140px;
-    position: absolute;
-    right: 10rem;
-    bottom: 0rem;
-    z-index: 20;
 }

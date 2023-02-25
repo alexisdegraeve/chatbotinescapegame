@@ -1,0 +1,72 @@
+.sink_green {
+    display: flex;
+    background-image: url(/assets/img/sink_green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 140px;
+    position: absolute;
+    right: 10rem;
+    bottom: 0rem;
+    z-index: 20;
+    -webkit-animation: myanim 1s normal linear;
+    -moz-animation: myanim 1s normal linear;
+    -o-animation: myanim 1s normal linear;
+    animation: myanim 1s normal linear;
+}
+
+.sink_red {
+    display: flex;
+    background-image: url(/assets/img/sink_red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0;
+    z-index: 30;
+    -webkit-animation: myanim 1s normal linear;
+    -moz-animation: myanim 1s normal linear;
+    -o-animation: myanim 1s normal linear;
+    animation: myanim 1s normal linear;
+}
+
+@-webkit-keyframes myanim {
+    0% {
+        background-position-y: 10rem;
+    }
+    100% {
+        background-position-y: 0rem;
+    }
+}
+
+@-moz-keyframes myanim {
+    0% {
+        background-position-y: 10rem;
+    }
+    100% {
+        background-position-y: 0rem;
+    }
+    /* set this to the width of the image */
+}
+
+@-o-keyframes myanim {
+    0% {
+        background-position-y: 10rem;
+    }
+    100% {
+        background-position-y: 0rem;
+    }
+    /* set this to the width of the image */
+}
+
+@keyframes myanim {
+    0% {
+        background-position-y: 10rem;
+    }
+    100% {
+        background-position-y: 0rem;
+    }
+    /* set this to the width of the image */
+}

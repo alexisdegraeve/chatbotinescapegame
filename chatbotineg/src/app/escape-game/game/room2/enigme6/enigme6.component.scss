@@ -286,10 +286,6 @@
 }
 
 .sink_green {
-    display: flex;
-    background-image: url(/assets/img/sink_green.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 200px;
     width: 150px;
     position: absolute;
@@ -312,19 +308,6 @@
     z-index: 30;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-}
-
-.sink_red {
-    display: flex;
-    background-image: url(/assets/img/sink_red.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 150px;
-    position: absolute;
-    right: 0.25rem;
-    bottom: 0;
-    z-index: 30;
 }
 
 .chest {
@@ -398,7 +381,6 @@
     align-items: flex-end;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to bottom, #1d3876, #042476 100%);
 }
 
 .rock01 {
