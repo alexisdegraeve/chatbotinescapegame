@@ -32,6 +32,8 @@ export class SimonComponent {
   canPlay = true;
   currentNote = 0;
   start = false;
+  intervalId:any;
+  wrong = false;
 
   constructor(private gameService: GameService) {
   }
@@ -61,11 +63,11 @@ export class SimonComponent {
   playAudio() {
     this.canPlay = false;
     let cpt = 0;
-    let intervalId = setInterval(() => {
+    this.intervalId = setInterval(() => {
         this.resetAnimateBox();
         if(cpt === this.melody.length) {
           this.canPlay = true;
-          clearInterval(intervalId);
+          clearInterval(this.intervalId);
         } else {
           let nb = this.melody[cpt];
           this.switchAnimateBox(nb);
@@ -129,8 +131,13 @@ export class SimonComponent {
 
       } else {
           // Perdu on recommence
-         console.log('PERDU');
-         this.playGame();
+          console.log('PERDU');
+         this.wrong = true;
+          setTimeout(() => {
+            clearInterval(this.intervalId);
+            this.wrong = false;
+            this.playGame();
+          }, 2000);
      }
   }
 

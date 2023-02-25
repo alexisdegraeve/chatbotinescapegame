@@ -15,5 +15,8 @@
             <div class="square" style="color:yellow" [class.animate]="animateBox3" (click)="playCase(3)"></div>
             <div class="square" style="color:blue" [class.animate]="animateBox4" (click)="playCase(4)"></div>
         </div>
+        <div class="alert alert-danger" role="alert" *ngIf="wrong">
+            Incorrect ! Réessaye
+        </div>
     </div>
 </div>
