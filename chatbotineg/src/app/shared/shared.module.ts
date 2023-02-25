@@ -5,23 +5,24 @@ import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { InformationBarComponent } from './information-bar/information-bar.component';
 import { GameService } from '../escape-game/game/game.service';
-
-
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
     MenuComponent,
-    InformationBarComponent
+    InformationBarComponent,
+    TimerComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     MenuComponent,
     FooterComponent,
     InformationBarComponent,
+    TimerComponent,
     RouterModule
   ],
   providers: [

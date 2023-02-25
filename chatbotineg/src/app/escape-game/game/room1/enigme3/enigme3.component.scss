@@ -1,27 +1,42 @@
 @import url('./../../../../../scss/sprites.scss');
 .addition {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 50;
     .row {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        .sign {
+            width: 2rem;
+            height: 2rem;
+        }
+        .total {
+            width: auto;
+        }
+        .validate {
+            width: 2.5rem;
+            border-radius: 50%;
+            margin-left: 1rem;
+        }
     }
     .totalnb {
-        width: 10rem !important;
+        width: 5rem;
+        background: transparent;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+        border: 2px solid #fff;
     }
     div {
         display: flex;
-        width: 4rem;
-        height: 4rem;
         justify-content: center;
         align-items: center;
-        margin: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin: 0.5rem;
     }
 }
 
@@ -33,6 +48,7 @@
     right: 10rem;
     bottom: 0rem;
     z-index: 0;
+    filter: invert(18%) sepia(92%) saturate(7224%) hue-rotate(360deg) brightness(107%) contrast(106%);
 }
 
 .sink_green1 {
@@ -61,8 +77,8 @@
     background-image: url(/assets/img/goomba.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .mushroom_bee {
@@ -70,8 +86,8 @@
     background-image: url(/assets/img/mushroom_bee.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .star {
@@ -79,8 +95,8 @@
     background-image: url(/assets/img/star.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 4rem;
-    width: 4rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .enigme3 {

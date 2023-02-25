@@ -10,6 +10,14 @@ export class GameService {
   private _roomNumber = 1;
   private _showInformationBar = false;
   private _keyHobbit = false;
+  private _startTimer = false;
+
+  public get startTimer() {
+    return this._startTimer;
+  }
+  public set startTimer(value) {
+    this._startTimer = value;
+  }
 
   public get keyHobbit() {
     return this._keyHobbit;
@@ -57,6 +65,7 @@ export class GameService {
   public set mountain(value) {
     this._mountain = value;
   }
+
 
 
 

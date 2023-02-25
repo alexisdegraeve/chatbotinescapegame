@@ -35,6 +35,7 @@ export class Enigme2Component implements OnInit {
   checkFace(i:number, j:number) {
     if ((i == this.nbX) && (j === this.nbY)) {
       console.log('GAGNE');
+      this.gameService.score += 250;
       this.showBubbble = false;
       this.gameService.enigmes[1] = true;
     } else {
@@ -57,6 +58,7 @@ export class Enigme2Component implements OnInit {
   }
 
   takeKeyHobbit() {
+    this.gameService.score += 20;
     this.gameService.keyHobbit = true;
   }
 

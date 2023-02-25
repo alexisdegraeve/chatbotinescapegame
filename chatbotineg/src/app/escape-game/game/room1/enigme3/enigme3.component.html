@@ -4,9 +4,8 @@
         <div class="sink_green sink_green1"></div>
     </a>
 
-    <div class="chest"></div>
 
-    <div class="addition">
+    <div class="addition" *ngIf="authorized">
         <div class="row">
             <div class="star"></div>
             <div class="sign">+</div>
@@ -43,12 +42,12 @@
             <div class="sign">+</div>
             <div class="star"></div>
             <div class="sign">=</div>
-            <input type="number" class="form-control" placeholder="total" aria-label="total">
-
+            <input (keyup.enter)="setSolution()" [(ngModel)]="total" type="number" min="1" max="99" class="form-control totalnb" placeholder="0" aria-label="total">
+            <button type="button" class="btn btn-primary validate" (click)="setSolution()"><i class="fa-solid fa-check"></i></button>
         </div>
     </div>
 
-    <a routerLink="/enigme4">
+    <a routerLink="/enigme4" *ngIf="output">
         <div class="sink_green sink_green2"></div>
     </a>
 

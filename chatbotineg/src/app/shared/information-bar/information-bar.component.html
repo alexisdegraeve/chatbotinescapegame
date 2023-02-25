@@ -5,6 +5,9 @@
     <div class="score">
         SCORE: {{ score }}
     </div>
+    <div class="timer-container">
+        <app-timer [starttimer]="startTimer" (starttimerEvent)="stopTimer()"></app-timer>
+    </div>
     <div class="enigmes">
         ENIGMES:
         <div class="key" *ngFor="let enigme of enigmes" [class.notfound]="!enigme"></div>

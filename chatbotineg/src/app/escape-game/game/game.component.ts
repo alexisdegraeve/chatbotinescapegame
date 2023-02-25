@@ -10,7 +10,6 @@ import { GameService } from './game.service';
 export class GameComponent {
   showInfo = true;
   startgame = false;
-  starttimer = false;
 
   constructor(private router: Router, private gameService: GameService) {
     this.gameService.showInformationBar = false;
@@ -20,17 +19,13 @@ export class GameComponent {
     this.showInfo = false;
     console.log('START GAME');
     this.startgame = true;
+    this.gameService.startTimer = true;
     this.router.navigate(['/enigme1']);
-    /* this.starttimer = true; */
   }
 
-  stopTimer() {
-    console.log('Timer STOP');
-  }
-
-  stopGame() {
-    this.startgame = false;
-    this.starttimer = false;
-    this.showInfo = true;
-  }
+  // stopGame() {
+  //   this.startgame = false;
+  //   this.gameService.startTimer = false;
+  //   this.showInfo = true;
+  // }
 }

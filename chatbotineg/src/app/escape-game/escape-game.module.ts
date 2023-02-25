@@ -6,7 +6,6 @@ import { ChatModule } from '../chat/chat.module';
 import { GameComponent } from './game/game.component';
 import { AboutComponent } from './about/about.component';
 import { InfoComponent } from './game/info/info.component';
-import { TimerComponent } from './game/timer/timer.component';
 import { Room1Component } from './game/room1/room1.component';
 import { Enigme1Component } from './game/room1/enigme1/enigme1.component';
 import { SimonComponent } from './game/room1/enigme1/simon/simon.component';
@@ -19,6 +18,7 @@ import { Enigme6Component } from './game/room2/enigme6/enigme6.component';
 import { GameService } from './game/game.service';
 import { WinComponent } from './game/win/win.component';
 import { GameoverComponent } from './game/gameover/gameover.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -28,7 +28,6 @@ import { GameoverComponent } from './game/gameover/gameover.component';
     GameComponent,
     AboutComponent,
     InfoComponent,
-    TimerComponent,
     Room1Component,
     Enigme1Component,
     SimonComponent,
@@ -44,7 +43,8 @@ import { GameoverComponent } from './game/gameover/gameover.component';
   imports: [
     CommonModule,
     SharedModule,
-    ChatModule
+    ChatModule,
+    FormsModule
   ],
   providers: [
     GameService

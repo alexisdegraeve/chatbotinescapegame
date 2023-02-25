@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { GameService } from 'src/app/escape-game/game/game.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { GameService } from 'src/app/escape-game/game/game.service';
   styleUrls: ['./information-bar.component.scss']
 })
 export class InformationBarComponent {
+
+  @Output() stopTimerEvent = new EventEmitter();
 
   constructor (private gameService: GameService) {
   }
@@ -25,5 +27,14 @@ export class InformationBarComponent {
 
   get showInformationBar() {
     return this.gameService.showInformationBar;
+  }
+
+  get startTimer() {
+    return this.gameService.startTimer;
+  }
+
+  stopTimer() {
+    console.log('STOP TIMER');
+    this.stopTimerEvent.emit(true);
   }
 }

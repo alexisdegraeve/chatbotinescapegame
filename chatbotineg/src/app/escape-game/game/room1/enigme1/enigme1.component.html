@@ -4,7 +4,7 @@
     </div>
 
     <div class="mountain" (click)="moveMountain()" *ngIf="showMoutain" [@enterAnimation]></div>
-    <div class="porte" [class.pe-none]="!passDoor">
+    <div class="porte" [class.pe-none]="!passDoor" *ngIf="!showMoutain">
         <div class="porte_hobbit_cadre"></div>
         <div class="porte_hobbit_interieur" routerLink="/enigme3"></div>
     </div>
