@@ -38,5 +38,9 @@ export class Enigme1Component {
     return this.gameService.showSimon;
   }
 
+  get passDoor() {
+    return this.gameService.enigmes[0] && this.gameService.enigmes[1];
+  }
+
 }
 /* Rejouer la musique */

@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, Input } from '@angular/core';
+import { GameService } from '../../../game.service';
 
 @Component({
   selector: 'app-simon',
@@ -31,6 +32,9 @@ export class SimonComponent {
   canPlay = true;
   currentNote = 0;
   start = false;
+
+  constructor(private gameService: GameService) {
+  }
 
   playGame() {
     this.start = true;
@@ -118,7 +122,9 @@ export class SimonComponent {
       if(this.checkNoteOk()) {
         this.currentNote++;
         if(this.melody.length === this.melodyPlayer.length) {
-          console.log('GAGNE');
+          /* GAGNE */
+          this.gameService.enigmes[0] = true;
+          this.gameService.showSimon = false;
         }
 
       } else {

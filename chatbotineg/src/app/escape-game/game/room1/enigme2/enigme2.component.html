@@ -4,12 +4,12 @@
     </a>
     <div class="chest"></div>
 
-    <button mat-button (click)="startGame()">Start</button>
-
-    <div *ngFor="let item of [].constructor(25); let i = index">
-        <div class="select-star" *ngFor="let item of [].constructor(15); let j = index" [ngClass]="(i==nbX && j==nbY) ? 'star_eye2' : 'star_eye1' " (click)="checkFace(i, j)">
+    <ng-container *ngIf="showEnigmeStars">
+        <div *ngFor="let item of [].constructor(25); let i = index">
+            <div class="select-star" *ngFor="let item of [].constructor(15); let j = index" [ngClass]="(i==nbX && j==nbY) ? 'star_eye2' : 'star_eye1' " (click)="checkFace(i, j)">
+            </div>
         </div>
-    </div>
+    </ng-container>
 
 
     <div class="full-grass">

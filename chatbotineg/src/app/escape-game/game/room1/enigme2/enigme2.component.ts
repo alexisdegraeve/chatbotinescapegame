@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { GameService } from '../../game.service';
   templateUrl: './enigme2.component.html',
   styleUrls: ['./enigme2.component.scss']
 })
-export class Enigme2Component {
+export class Enigme2Component implements OnInit {
 
   nbX = 0;
   nbY = 0;
@@ -15,6 +15,10 @@ export class Enigme2Component {
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
     this.gameService.roomNumber = 1;
+  }
+
+  ngOnInit(): void {
+    this.startGame();
   }
 
   startGame() {
@@ -28,7 +32,8 @@ export class Enigme2Component {
   checkFace(i:number, j:number) {
     if ((i == this.nbX) && (j === this.nbY)) {
       console.log('GAGNE');
-      this.startGame();
+      this.gameService.enigmes[1] = true;
+      //this.startGame();
     } else {
       if(this.try === 0 ) {
         console.log('PERDU');
@@ -42,5 +47,9 @@ export class Enigme2Component {
 
   getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
+  }
+
+  get showEnigmeStars() {
+    return this.gameService.enigmes[0] && !this.gameService.enigmes[1];
   }
 }
