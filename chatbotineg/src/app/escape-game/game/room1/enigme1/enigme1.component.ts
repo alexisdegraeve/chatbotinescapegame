@@ -26,7 +26,8 @@ export class Enigme1Component {
   }
 
   constructor(private gameService: GameService) {
-
+    this.gameService.showInformationBar = true;
+    this.gameService.roomNumber = 1;
   }
 
   getMountain() {

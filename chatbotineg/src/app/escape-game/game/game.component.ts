@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { GameService } from './game.service';
 
 @Component({
   selector: 'app-game',
@@ -10,10 +12,15 @@ export class GameComponent {
   startgame = false;
   starttimer = false;
 
+  constructor(private router: Router, private gameService: GameService) {
+    this.gameService.showInformationBar = false;
+  }
+
   closeInfo() {
     this.showInfo = false;
     console.log('START GAME');
     this.startgame = true;
+    this.router.navigate(['/enigme1']);
     /* this.starttimer = true; */
   }
 

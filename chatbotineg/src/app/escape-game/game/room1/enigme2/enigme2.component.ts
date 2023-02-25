@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-enigme2',
@@ -10,6 +11,11 @@ export class Enigme2Component {
   nbX = 0;
   nbY = 0;
   try = 8;
+
+  constructor(private gameService: GameService) {
+    this.gameService.showInformationBar = true;
+    this.gameService.roomNumber = 1;
+  }
 
   startGame() {
     this.try = 8;

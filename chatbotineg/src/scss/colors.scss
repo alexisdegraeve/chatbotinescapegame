@@ -1,0 +1,20 @@
+/* Color */
+
+$blue:#00b7ff;
+$yellow:#ffc800;
+$red:#ff2200;
+$green:#51b53f;
+.txt {
+    &.blue {
+        color: $blue;
+    }
+    &.yellow {
+        color: $yellow;
+    }
+    &.red {
+        color: $red;
+    }
+    &.green {
+        color: $green;
+    }
+}

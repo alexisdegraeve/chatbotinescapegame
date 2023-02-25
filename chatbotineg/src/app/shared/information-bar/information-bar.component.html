@@ -1,6 +1,6 @@
-<div class="information-bar">
+<div class="information-bar" *ngIf="showInformationBar">
     <div class="room">
-        ROOM 1
+        ROOM {{ roomNumber }}
     </div>
     <div class="score">
         SCORE: {{ score }}

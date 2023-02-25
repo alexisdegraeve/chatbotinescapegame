@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-enigme6',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./enigme6.component.scss']
 })
 export class Enigme6Component {
-
+  constructor(private gameService: GameService) {
+    this.gameService.showInformationBar = true;
+    this.gameService.roomNumber = 2;
+  }
 }

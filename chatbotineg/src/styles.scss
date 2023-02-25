@@ -1,31 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
-@font-face {
-    font-family: ghastly;
-    src: url(assets/font/ghastly.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: skullx;
-    src: url(assets/font/skullx.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: luckycharms;
-    src: url(assets/font/luckycharms.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: SuperMario256;
-    src: url(assets/font/SuperMario256.ttf) format("opentype");
-}
-
-@font-face {
-    font-family: digital-7;
-    src: url(assets/font/digital-7.ttf) format("opentype");
-}
-
+@import './scss/fonts.scss';
+@import './scss/colors.scss';
 html {
     height: 100%;
 }

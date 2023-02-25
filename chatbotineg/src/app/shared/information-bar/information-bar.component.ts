@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GameService } from 'src/app/escape-game/game/game.service';
 
 @Component({
@@ -17,5 +17,13 @@ export class InformationBarComponent {
 
   get enigmes() {
     return this.gameService.enigmes;
+  }
+
+  get roomNumber() {
+    return this.gameService.roomNumber;
+  }
+
+  get showInformationBar() {
+    return this.gameService.showInformationBar;
   }
 }
