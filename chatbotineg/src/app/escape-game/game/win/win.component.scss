@@ -1,6 +1,16 @@
 .title-mario {
     display: flex;
+    margin-left: 11rem;
     div:nth-child(2) {
         margin-left: 4rem;
     }
+}
+
+.super-mario-win {
+    height: 306px;
+    width: 176px;
+    background-image: url(/assets/img/super_mario_win.png);
+    background-repeat: no-repeat;
+    display: flex;
+    filter: drop-shadow(0 5px 5px #222);
 }

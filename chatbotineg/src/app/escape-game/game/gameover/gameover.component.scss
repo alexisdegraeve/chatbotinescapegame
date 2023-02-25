@@ -1,6 +1,17 @@
 .title-mario {
     display: flex;
+    margin-left: 15rem;
+    font-size: 7rem;
     div:nth-child(2) {
         margin-left: 4rem;
     }
+}
+
+.game-over-mario {
+    height: 260px;
+    width: 266px;
+    background-image: url(/assets/img/mario_angry.png);
+    background-repeat: no-repeat;
+    display: flex;
+    filter: drop-shadow(0 5px 5px #222);
 }
