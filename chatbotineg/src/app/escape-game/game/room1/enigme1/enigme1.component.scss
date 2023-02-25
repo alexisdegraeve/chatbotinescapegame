@@ -12,7 +12,7 @@
 }
 
 .mountain {
-    z-index: 20;
+    z-index: 60;
     height: 594px;
     width: 649px;
     background-image: url(/assets/img/mountain.png);
@@ -50,6 +50,8 @@
     align-items: center;
     position: absolute;
     bottom: 4rem;
+    z-index: 50;
+    cursor: pointer;
 }
 
 .porte_hobbit_cadre {
@@ -143,8 +145,4 @@
 
 .simon {
     align-self: flex-start;
-}
-
-.disable-porte {
-    pointer-events: none;
 }

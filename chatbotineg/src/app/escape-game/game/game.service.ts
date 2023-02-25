@@ -9,6 +9,14 @@ export class GameService {
   private _enigmes = [false, false, false, false, false, false];
   private _roomNumber = 1;
   private _showInformationBar = false;
+  private _keyHobbit = false;
+
+  public get keyHobbit() {
+    return this._keyHobbit;
+  }
+  public set keyHobbit(value) {
+    this._keyHobbit = value;
+  }
 
   public get showInformationBar() {
     return this._showInformationBar;

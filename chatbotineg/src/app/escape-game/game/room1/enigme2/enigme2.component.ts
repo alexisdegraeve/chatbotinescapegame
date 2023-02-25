@@ -7,10 +7,12 @@ import { GameService } from '../../game.service';
   styleUrls: ['./enigme2.component.scss']
 })
 export class Enigme2Component implements OnInit {
-
+  max_x= 10;
+  max_y = 10;
   nbX = 0;
   nbY = 0;
   try = 8;
+  showBubbble = true;
 
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
@@ -18,13 +20,14 @@ export class Enigme2Component implements OnInit {
   }
 
   ngOnInit(): void {
+    this.showBubbble = true;
     this.startGame();
   }
 
   startGame() {
     this.try = 8;
-    this.nbX = this.getRandomInt(25);
-    this.nbY = this.getRandomInt(15);
+    this.nbX = this.getRandomInt(this.max_x);
+    this.nbY = this.getRandomInt(this.max_y);
     console.log(this.nbX);
     console.log(this.nbY);
   }
@@ -32,8 +35,8 @@ export class Enigme2Component implements OnInit {
   checkFace(i:number, j:number) {
     if ((i == this.nbX) && (j === this.nbY)) {
       console.log('GAGNE');
+      this.showBubbble = false;
       this.gameService.enigmes[1] = true;
-      //this.startGame();
     } else {
       if(this.try === 0 ) {
         console.log('PERDU');
@@ -51,5 +54,17 @@ export class Enigme2Component implements OnInit {
 
   get showEnigmeStars() {
     return this.gameService.enigmes[0] && !this.gameService.enigmes[1];
+  }
+
+  takeKeyHobbit() {
+    this.gameService.keyHobbit = true;
+  }
+
+  get keyHobbit() {
+    return this.gameService.keyHobbit;
+  }
+
+  get foundEnigme(){
+    return this.gameService.enigmes[1];
   }
 }

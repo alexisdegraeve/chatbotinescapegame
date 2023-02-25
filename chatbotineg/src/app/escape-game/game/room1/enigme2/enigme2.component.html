@@ -4,11 +4,16 @@
     </a>
     <div class="chest"></div>
 
-    <ng-container *ngIf="showEnigmeStars">
-        <div *ngFor="let item of [].constructor(25); let i = index">
-            <div class="select-star" *ngFor="let item of [].constructor(15); let j = index" [ngClass]="(i==nbX && j==nbY) ? 'star_eye2' : 'star_eye1' " (click)="checkFace(i, j)">
+    <div *ngIf="showEnigmeStars" class="enigmestars">
+        <div *ngFor="let item of [].constructor(max_x); let i = index">
+            <div class="select-star" *ngFor="let item of [].constructor(max_y); let j = index" [ngClass]="(i==nbX && j==nbY) ? 'star_eye2' : 'star_eye1' " (click)="checkFace(i, j)">
             </div>
         </div>
+    </div>
+
+    <ng-container *ngIf="!keyHobbit">
+        <div class="key" (click)="takeKeyHobbit()" [class.pe-none]="!foundEnigme"></div>
+        <div class="bubble" *ngIf="!foundEnigme"></div>
     </ng-container>
 
 

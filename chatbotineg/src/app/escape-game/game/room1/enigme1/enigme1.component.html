@@ -3,8 +3,8 @@
         <app-simon [showSimon]="getShowSimon()"></app-simon>
     </div>
 
-    <div class="mountain" (click)="moveMountain()" *ngIf="getMountain()" [@enterAnimation]></div>
-    <div class="porte" [class.disable-porte]="!passDoor">
+    <div class="mountain" (click)="moveMountain()" *ngIf="showMoutain" [@enterAnimation]></div>
+    <div class="porte" [class.pe-none]="!passDoor">
         <div class="porte_hobbit_cadre"></div>
         <div class="porte_hobbit_interieur" routerLink="/enigme3"></div>
     </div>

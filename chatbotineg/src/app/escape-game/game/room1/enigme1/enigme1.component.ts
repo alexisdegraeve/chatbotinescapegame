@@ -30,7 +30,7 @@ export class Enigme1Component {
     this.gameService.roomNumber = 1;
   }
 
-  getMountain() {
+  get showMoutain() {
     return this.gameService.mountain;
   }
 
@@ -39,8 +39,7 @@ export class Enigme1Component {
   }
 
   get passDoor() {
-    return this.gameService.enigmes[0] && this.gameService.enigmes[1];
+    return this.gameService.keyHobbit;
   }
 
 }
-/* Rejouer la musique */
