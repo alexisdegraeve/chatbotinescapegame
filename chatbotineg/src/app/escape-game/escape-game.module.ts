@@ -17,6 +17,8 @@ import { Enigme4Component } from './game/room2/enigme4/enigme4.component';
 import { Enigme5Component } from './game/room2/enigme5/enigme5.component';
 import { Enigme6Component } from './game/room2/enigme6/enigme6.component';
 import { GameService } from './game/game.service';
+import { WinComponent } from './game/win/win.component';
+import { GameoverComponent } from './game/gameover/gameover.component';
 
 
 
@@ -35,7 +37,9 @@ import { GameService } from './game/game.service';
     Room2Component,
     Enigme4Component,
     Enigme5Component,
-    Enigme6Component
+    Enigme6Component,
+    WinComponent,
+    GameoverComponent
   ],
   imports: [
     CommonModule,

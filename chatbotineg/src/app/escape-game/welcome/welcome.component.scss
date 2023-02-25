@@ -1,23 +1,18 @@
 @import '../../../scss/colors.scss';
-.horror-container {
+.super-mario-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    .title {
-        font-family: SuperMario;
-        font-size: 10rem;
-        text-shadow: 10px 10px black;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-         :nth-child(2) {
-            margin-top: -6rem;
-        }
-        span {
-            -webkit-text-stroke: 3px #666;
-        }
+}
+
+.title-mario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     :nth-child(2) {
+        margin-top: -6rem;
     }
 }
 

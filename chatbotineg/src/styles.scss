@@ -23,3 +23,15 @@ body {
         font-size: 14px;
     }
 }
+
+
+/* Common Style */
+
+.title-mario {
+    font-family: SuperMario;
+    font-size: 10rem;
+    text-shadow: 10px 10px black;
+    span {
+        -webkit-text-stroke: 3px #666;
+    }
+}
