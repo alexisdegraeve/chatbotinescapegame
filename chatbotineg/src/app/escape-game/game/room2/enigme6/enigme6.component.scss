@@ -479,3 +479,14 @@
 .simon {
     align-self: flex-start;
 }
+
+.move-barque {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    transition: all 0.5s ease;
+    &.rive-droite {
+        margin-left: 50%;
+    }
+}

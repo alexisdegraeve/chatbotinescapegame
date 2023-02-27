@@ -7,25 +7,29 @@
 
     <div class="container-player">
         <div class="select-player">
-            <div class="mario"></div>
+            <div class="mario" (click)="selectMario()"></div>
         </div>
         <div class="select-player">
-            <div class="mushroom"></div>
+            <div class="mushroom" (click)="selectMushroom()"></div>
         </div>
         <div class="select-player">
-            <div class="bowser"></div>
+            <div class="bowser" (click)="selectBowser()"></div>
         </div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-success" (click)="traverser()">Traverser</button>
     </div>
 
     <a routerLink="/enigme5">
         <div class="sink_green sink_green1"></div>
     </a>
 
-    <div>
+    <div class="move-barque" [class.rive-droite]="rive_droite">
         <div class="barque"></div>
-        <div class="mario"></div>
-        <!-- <div class="bowser"></div> -->
-        <div class="mushroom"></div>
+        <div class="mario" *ngIf="mario" (click)="unselectMario()"></div>
+        <div class="bowser" *ngIf="bowser" (click)="unselectBowser()"></div>
+        <div class="mushroom" *ngIf="mushroom" (click)="unselectMushroom()"></div>
     </div>
 
 
