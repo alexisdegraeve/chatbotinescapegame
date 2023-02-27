@@ -10,12 +10,15 @@
     font-size: 40px;
     color: #fff;
     text-shadow: #000 1px 0 10px;
+    z-index: 20;
+    display: flex;
 }
 
 .parking-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .place-parking {
@@ -213,7 +216,7 @@
     height: 350px;
     width: 140px;
     position: absolute;
-    right: 10rem;
+    right: 0rem;
     bottom: 0rem;
     z-index: 0;
     background-size: contain;
@@ -351,4 +354,13 @@
 
 .simon {
     align-self: flex-start;
+}
+
+.totalnb {
+    width: 5rem;
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #fff;
 }

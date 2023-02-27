@@ -4,7 +4,7 @@
         <div class="sink_green sink_green1"></div>
     </a>
 
-    <div class="matches-container">
+    <div class="matches-container" [class.pe-none]="output">
         <div class="matches pos-1">
             <div class="head"></div>
             <div class="body"></div>
@@ -30,7 +30,7 @@
             <div class="body"></div>
         </div>
 
-        <div class="matches pos-6">
+        <div class="matches pos-6" (click)="moveMatches()" [class.anim-matches-nine]="moveMatche || output">
             <div class="head"></div>
             <div class="body"></div>
         </div>
@@ -101,7 +101,7 @@
 
     </div>
 
-    <a routerLink="/enigme5">
+    <a routerLink="/enigme5" *ngIf="output">
         <div class="sink_green sink_green2"></div>
     </a>
     <div class="full-grass">

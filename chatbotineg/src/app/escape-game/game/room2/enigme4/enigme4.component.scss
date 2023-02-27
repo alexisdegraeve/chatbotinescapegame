@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(0.6);
+    margin-bottom: 20rem;
+    margin-right: 50%;
 }
 
 .pos-1 {
@@ -14,6 +17,7 @@
     left: 11rem;
     margin-bottom: 10rem;
     transform: rotate(90deg);
+    z-index: 20;
 }
 
 .pos-3 {
@@ -21,6 +25,7 @@
     left: 11rem;
     margin-top: 12rem;
     transform: rotate(90deg);
+    z-index: 20;
 }
 
 .pos-4 {
@@ -285,4 +290,10 @@
 
 .simon {
     align-self: flex-start;
+}
+
+.anim-matches-nine {
+    left: 16rem;
+    margin-top: 0rem;
+    transition: all 0.5s ease;
 }

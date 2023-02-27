@@ -5,7 +5,7 @@
     </a>
 
 
-    <div class="parking-container">
+    <div class="parking-container" *ngIf="!output">
         <div class="case-parking">
             <div class="parking-number">16</div>
             <div class="place-parking">
@@ -34,7 +34,10 @@
         </div>
 
         <div class="case-parking">
-            <div class="parking-number">??</div>
+            <div class="parking-number" [class.pe-none]="output">
+                <input (keyup.enter)="setSolution()" [(ngModel)]="parkingnb" type="number" min="1" max="99" class="form-control totalnb" placeholder="0" aria-label="parking number">
+                <button type="button" class="btn btn-primary validate" (click)="setSolution()"><i class="fa-solid fa-check"></i></button>
+            </div>
             <div class="place-parking">
                 <div class="car_mario"></div>
             </div>
@@ -51,7 +54,7 @@
 
     </div>
 
-    <a routerLink="/enigme6">
+    <a routerLink="/enigme6" *ngIf="output">
         <div class="sink_green sink_green2"></div>
     </a>
     <div class="full-grass">

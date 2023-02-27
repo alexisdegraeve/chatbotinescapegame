@@ -24,6 +24,8 @@ export class Enigme3Component {
 
   setSolution() {
     this.gameService.enigmes[2] = this.total === this.solution;
-    this.gameService.score += 200;
+    if(this.gameService.enigmes[2]) {
+      this.gameService.score += 200;
+    }
   }
 }
