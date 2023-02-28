@@ -1,6 +1,14 @@
 .container-player {
     display: flex;
     flex-direction: row;
+    &.end {
+        justify-content: flex-end;
+    }
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .select-player {
@@ -14,6 +22,7 @@
     align-items: center;
     .mushroom,
     .bowser,
+    .luigi,
     .mario {
         position: relative;
         margin-top: 0;
@@ -90,7 +99,7 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 25rem;
+    left: 29rem;
     bottom: 6rem;
 }
 
@@ -105,9 +114,23 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 0rem;
     left: 20rem;
     bottom: 6rem;
+}
+
+.luigi {
+    display: flex;
+    background-image: url(/assets/img/rive_luigi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 8rem;
+    width: 12rem;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 25;
+    left: 30rem;
+    bottom: 6.8rem
 }
 
 .no-car {
@@ -326,7 +349,6 @@
     background-color: #6fc9e7;
     height: calc(100% - 142px);
     display: flex;
-    justify-content: center;
     align-items: center;
     background: linear-gradient(#040837, #2a4891, #1a326e 80%, #042476 100%);
 }
@@ -487,6 +509,7 @@
     margin-left: 0;
     transition: all 0.5s ease;
     &.rive-droite {
-        margin-left: 50%;
+        margin-left: 40%;
+        /* transform: scaleX(-1); */
     }
 }

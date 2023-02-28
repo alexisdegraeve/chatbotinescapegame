@@ -1,24 +1,37 @@
 <div class="enigme5">
 
-    <div class="alert alert-danger" role="alert">
-        <b>Avertissement !</b> 2 personnes maximum dans la barque
-    </div>
-
 
     <div class="container-player">
-        <div class="select-player" (click)="selectMario()">
-            <div class="mario" *ngIf="!mario"></div>
+        <div class="select-player" (click)="selectLuigi()">
+            <div class="luigi" *ngIf="embarque[0]"></div>
         </div>
         <div class="select-player" (click)="selectMushroom()">
-            <div class="mushroom" *ngIf="!mushroom"></div>
+            <div class="mushroom" *ngIf="embarque[1]"></div>
         </div>
         <div class="select-player" (click)="selectBowser()">
-            <div class="bowser" *ngIf="!bowser"></div>
+            <div class="bowser" *ngIf="embarque[2]"></div>
         </div>
     </div>
 
-    <div>
+    <div class="middle">
+        <div class="alert alert-danger" role="alert">
+            <b>Avertissement !</b> 2 personnes maximum dans la barque
+        </div>
+
+
         <button type="button" class="btn btn-success" (click)="traverser()">Traverser</button>
+    </div>
+
+    <div class="container-player end">
+        <div class="select-player" (click)="selectLuigi()">
+            <div class="luigi" *ngIf="debarque[0]"></div>
+        </div>
+        <div class="select-player" (click)="selectMushroom()">
+            <div class="mushroom" *ngIf="debarque[1]"></div>
+        </div>
+        <div class="select-player" (click)="selectBowser()">
+            <div class="bowser" *ngIf="debarque[2]"></div>
+        </div>
     </div>
 
     <a routerLink="/enigme5">
@@ -27,14 +40,15 @@
 
     <div class="move-barque" [class.rive-droite]="rive_droite">
         <div class="barque"></div>
-        <div class="mario" *ngIf="mario" (click)="unselectMario()"></div>
-        <div class="bowser" *ngIf="bowser" (click)="unselectBowser()"></div>
-        <div class="mushroom" *ngIf="mushroom" (click)="unselectMushroom()"></div>
+        <div class="mario"></div>
+        <div class="luigi" *ngIf="barque===1" (click)="unselectLuigi()"></div>
+        <div class="mushroom" *ngIf="barque===2" (click)="unselectMushroom()"></div>
+        <div class="bowser" *ngIf="barque===3" (click)="unselectBowser()"></div>
     </div>
 
 
     <div class="panel_exit"></div>
-    <div class="sink_red"></div>
+    <div class="sink_red" routerLink="/win" *ngIf="output"></div>
     <div class="full-grass">
         <div class="grass2"></div>
         <div class="rock01"></div>
