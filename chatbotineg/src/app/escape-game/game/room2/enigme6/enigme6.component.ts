@@ -31,6 +31,7 @@ export class Enigme6Component implements OnInit{
   }
 
   selectLuigi(){
+    if (this.barque > 0) return;
     if (this.rive_droite) {
       this.debarque[0] = false;
       this.barque = 1;
@@ -41,6 +42,7 @@ export class Enigme6Component implements OnInit{
   }
 
   selectMushroom() {
+    if (this.barque > 0) return;
     if (this.rive_droite) {
       this.debarque[1] = false;
       this.barque = 2;
@@ -51,6 +53,7 @@ export class Enigme6Component implements OnInit{
   }
 
   selectBowser(){
+    if (this.barque > 0) return;
     if (this.rive_droite) {
       this.debarque[2] = false;
       this.barque = 3;

@@ -15,11 +15,16 @@
 
     <div class="middle">
         <div class="alert alert-danger" role="alert">
-            <b>Avertissement !</b> 2 personnes maximum dans la barque
+            <b>!! Avertissement !!</b>
+            <ul>
+                <li><b>2</b> personnes maximum dans la barque !</li>
+                <li>Ne laisse pas seul Luigi avec le champignon, Luigi va le manger !</li>
+                <li>Ne laisse pas seul Luigi avec Bowser, Bowser va le manger !</li>
+            </ul>
         </div>
 
 
-        <button type="button" class="btn btn-success" (click)="traverser()">Traverser</button>
+        <button type="button" class="btn btn-success" (click)="traverser()" *ngIf="!output">Traverser</button>
     </div>
 
     <div class="container-player end">

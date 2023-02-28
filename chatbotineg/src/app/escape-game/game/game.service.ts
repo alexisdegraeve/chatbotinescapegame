@@ -66,7 +66,15 @@ export class GameService {
     this._mountain = value;
   }
 
-
+  restartGame() {
+    this._showSimon = false;
+    this._score = 0;
+    this._enigmes = [false, false, false, false, false, false];
+    this._roomNumber = 1;
+    this._showInformationBar = false;
+    this._keyHobbit = false;
+    this._startTimer = false;
+  }
 
 
   constructor() { }

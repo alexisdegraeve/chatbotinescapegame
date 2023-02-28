@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { GameService } from './game.service';
 
@@ -7,12 +7,16 @@ import { GameService } from './game.service';
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.scss']
 })
-export class GameComponent {
+export class GameComponent implements OnDestroy {
   showInfo = true;
   startgame = false;
 
   constructor(private router: Router, private gameService: GameService) {
     this.gameService.showInformationBar = false;
+  }
+
+  ngOnDestroy(): void {
+    this.gameService.restartGame();
   }
 
   closeInfo() {

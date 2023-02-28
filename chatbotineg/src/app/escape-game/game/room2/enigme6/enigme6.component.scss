@@ -318,6 +318,11 @@
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
 }
 
+.sink_red {
+    z-index: 50;
+    cursor: pointer;
+}
+
 .panel_exit {
     display: flex;
     background-image: url(/assets/img/exit_red.png);
@@ -328,7 +333,7 @@
     position: absolute;
     right: 1.5rem;
     bottom: 5rem;
-    z-index: 30;
+    z-index: 50;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
