@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { GameService } from 'src/app/escape-game/game/game.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   id: any;
 
 
-  constructor (private gameService: GameService) {
+  constructor (private gameService: GameService, private router:Router) {
   }
 
   ngOnInit() {
@@ -54,6 +55,8 @@ export class TimerComponent implements OnInit, OnDestroy {
       clearInterval(this.id);
       this.resetDateTime();
       this.gameService.startTimer = false;
+      this.router.navigate(['/gameover']);
+
     }
   }
 
