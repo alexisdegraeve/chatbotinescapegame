@@ -16,7 +16,10 @@
             <div class="square" style="color:blue" [class.animate]="animateBox4" (click)="playCase(4)"></div>
         </div>
         <div class="alert alert-danger" role="alert" *ngIf="wrong">
-            Incorrect ! Réessaye
+            <span class="win-lose">Tu perds !</span>
+        </div>
+        <div class="alert alert-success" role="alert" *ngIf="win">
+            <span class="win-lose">Bravo !</span>
         </div>
     </div>
 </div>

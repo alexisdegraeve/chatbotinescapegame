@@ -3,6 +3,12 @@
         <div class="sink_green"></div>
     </a>
     <div class="chest"></div>
+    <div class="alert alert-danger info-win" role="alert" *ngIf="wrong">
+        <span class="win-lose">Tu perds !</span>
+    </div>
+    <div class="alert alert-success info-win" role="alert" *ngIf="win">
+        <span class="win-lose">Bravo !</span>
+    </div>
 
     <div *ngIf="showEnigmeStars" class="enigmestars">
         <div *ngFor="let item of [].constructor(max_x); let i = index">

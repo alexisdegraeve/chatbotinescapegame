@@ -36,3 +36,19 @@ body {
         -webkit-text-stroke: 3px #666;
     }
 }
+
+.win-lose {
+    font-family: SuperMario;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+    span {
+        -webkit-text-stroke: 3px #666;
+    }
+}
+
+.info-win {
+    align-self: center;
+    position: absolute;
+    top: 10rem;
+    z-index: 100;
+}

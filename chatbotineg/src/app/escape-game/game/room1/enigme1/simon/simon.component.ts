@@ -34,6 +34,7 @@ export class SimonComponent {
   start = false;
   intervalId:any;
   wrong = false;
+  win = false;
 
   constructor(private gameService: GameService) {
   }
@@ -113,6 +114,7 @@ export class SimonComponent {
   }
 
   playCase(num: number) {
+      this.win = false;
       this.resetAnimateBox();
       this.switchAnimateBox(num);
       let audio = new Audio();
@@ -125,8 +127,12 @@ export class SimonComponent {
         this.currentNote++;
         if(this.melody.length === this.melodyPlayer.length) {
           /* GAGNE */
-          this.gameService.enigmes[0] = true;
-          this.gameService.showSimon = false;
+          this.win = true;
+          setTimeout(() => {
+            clearInterval(this.intervalId);
+            this.gameService.enigmes[0] = true;
+            this.gameService.showSimon = false;
+          }, 2000);
         }
 
       } else {
@@ -144,4 +150,6 @@ export class SimonComponent {
   checkNoteOk() {
     return this.melodyPlayer[this.currentNote]  === this.melody[this.currentNote];
   }
+
+
 }

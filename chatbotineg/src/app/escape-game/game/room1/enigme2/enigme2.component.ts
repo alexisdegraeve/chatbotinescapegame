@@ -12,6 +12,8 @@ export class Enigme2Component implements OnInit {
   nbX = 0;
   nbY = 0;
   try = 8;
+  wrong = false;
+  win = false;
   showBubbble = true;
 
   constructor(private gameService: GameService) {
@@ -25,6 +27,8 @@ export class Enigme2Component implements OnInit {
   }
 
   startGame() {
+    this.win = false;
+    this.wrong = false;
     this.try = 8;
     this.nbX = this.getRandomInt(this.max_x);
     this.nbY = this.getRandomInt(this.max_y);
@@ -35,16 +39,27 @@ export class Enigme2Component implements OnInit {
   checkFace(i:number, j:number) {
     if ((i == this.nbX) && (j === this.nbY)) {
       console.log('GAGNE');
+      this.win = true;
       this.gameService.score += 250;
       this.showBubbble = false;
       this.gameService.enigmes[1] = true;
     } else {
       if(this.try === 0 ) {
         console.log('PERDU');
-        this.startGame();
+        this.win = false;
+        this.wrong = true;
+        setTimeout(() => {
+          this.startGame();
+        }, 2000);
       } else {
+        this.win = false;
+        this.wrong = true;
+        setTimeout(() => {
+          this.win = false;
+          this.wrong = false;
+          this.try--;
+        }, 2000);
         console.log('RECOMMENCE');
-        this.try--;
       }
     }
   }
