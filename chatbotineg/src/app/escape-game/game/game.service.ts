@@ -73,7 +73,7 @@ export class GameService {
     this._roomNumber = 1;
     this._showInformationBar = false;
     this._keyHobbit = false;
-    this._startTimer = false;
+    //this._startTimer = false;
   }
 
 

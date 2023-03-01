@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { GameService } from 'src/app/escape-game/game/game.service';
 
 @Component({
   selector: 'app-timer',
@@ -11,15 +12,19 @@ export class TimerComponent implements OnInit, OnDestroy {
   hour = 0;
   min = 0;
   sec = 0;
-  @Input() starttimer = false;
-  @Output() starttimerEvent = new EventEmitter();
   currentDate = new Date();
   id: any;
 
+
+  constructor (private gameService: GameService) {
+  }
+
   ngOnInit() {
+    console.log('ng on init elapse');
     this.resetDateTime();
+    console.log(this.gameService.startTimer);
     this.id = setInterval(() => {
-      if(this.starttimer) {
+      if(this.gameService.startTimer) {
         if((this.currentDate.getMinutes() == 0) && this.currentDate.getSeconds() ==0) {
           this.stopTimer();
         }else {
@@ -48,11 +53,15 @@ export class TimerComponent implements OnInit, OnDestroy {
     if (this.id) {
       clearInterval(this.id);
       this.resetDateTime();
-      this.starttimerEvent.emit(false);
+      this.gameService.startTimer = false;
     }
   }
 
   ngOnDestroy(): void {
     this.stopTimer();
+  }
+
+  get starttimer() {
+    return this.gameService.startTimer;
   }
 }

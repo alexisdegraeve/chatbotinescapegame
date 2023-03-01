@@ -33,8 +33,4 @@ export class InformationBarComponent {
     return this.gameService.startTimer;
   }
 
-  stopTimer() {
-    console.log('STOP TIMER');
-    this.stopTimerEvent.emit(true);
-  }
 }
