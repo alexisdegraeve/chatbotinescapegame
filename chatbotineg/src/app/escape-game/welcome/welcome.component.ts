@@ -8,6 +8,7 @@ import { GameService } from '../game/game.service';
 })
 export class WelcomeComponent {
   constructor(private gameService: GameService) {
+    this.gameService.restartGame();
     this.gameService.showInformationBar = false;
   }
 }

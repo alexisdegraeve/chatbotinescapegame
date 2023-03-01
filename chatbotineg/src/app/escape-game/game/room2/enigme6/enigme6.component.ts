@@ -13,6 +13,8 @@ export class Enigme6Component implements OnInit{
   debarque = [false, false, false];
   barque = 0;
   gagne = false;
+  wrong = false;
+  win = false;
 
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
@@ -104,6 +106,8 @@ export class Enigme6Component implements OnInit{
     this.debarque = [false, false, false];
     this.barque = 0;
     this.gagne = false;
+    this.wrong = false;
+    this.win = false;
   }
 
   get output() {
@@ -127,7 +131,11 @@ export class Enigme6Component implements OnInit{
     }
     console.log('PERDU ' +  perdu);
     if(perdu) {
-      this.restartGame();
+      this.wrong = true;
+      setTimeout(() => {
+        this.wrong = false;
+        this.restartGame();
+      }, 2000);
     }
   }
 
@@ -138,6 +146,7 @@ export class Enigme6Component implements OnInit{
       this.gameService.enigmes[5] = true;
       if(this.gameService.enigmes[5]) {
         this.gameService.score += 360;
+        this.win = true;
       }
     }
   }

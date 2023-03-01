@@ -26,7 +26,6 @@ export class AppComponent {
 
   stopGame() {
     console.log('STOP GAME');
-    this.router.navigate(['/gameover']);
   }
 
 }

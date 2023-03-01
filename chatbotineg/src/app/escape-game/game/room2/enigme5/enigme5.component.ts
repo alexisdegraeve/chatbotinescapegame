@@ -9,6 +9,8 @@ import { GameService } from '../../game.service';
 export class Enigme5Component {
   parkingnb = 0;
   solution = 87;
+  wrong = false;
+  win = false;
 
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
@@ -21,9 +23,14 @@ export class Enigme5Component {
   }
 
   setSolution() {
+    this.wrong = false;
+    this.win = false;
     this.gameService.enigmes[4] = this.parkingnb === this.solution;
     if(this.gameService.enigmes[4]) {
       this.gameService.score += 260;
+      this.win = true;
+    } else {
+      this.wrong = true;
     }
   }
 }
