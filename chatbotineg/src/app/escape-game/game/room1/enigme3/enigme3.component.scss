@@ -60,18 +60,6 @@
     transform: scaleY(-1);
 }
 
-.chest {
-    display: flex;
-    background-image: url(/assets/img/chest.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 300px;
-    bottom: 2rem;
-    right: 15rem;
-    position: absolute;
-}
-
 .goomba {
     display: flex;
     background-image: url(/assets/img/goomba.png);
