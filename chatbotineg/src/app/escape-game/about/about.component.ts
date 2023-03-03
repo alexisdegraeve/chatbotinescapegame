@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../game/game.service';
 
 @Component({
   selector: 'app-about',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
+  constructor(private gameService: GameService) {
+    this.gameService.showInformationBar = false;
+  }
 }
