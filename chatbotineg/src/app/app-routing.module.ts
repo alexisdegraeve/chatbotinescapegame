@@ -10,12 +10,14 @@ import { Enigme4Component } from './escape-game/game/room2/enigme4/enigme4.compo
 import { Enigme5Component } from './escape-game/game/room2/enigme5/enigme5.component';
 import { Enigme6Component } from './escape-game/game/room2/enigme6/enigme6.component';
 import { WinComponent } from './escape-game/game/win/win.component';
+import { SondageComponent } from './escape-game/sondage/sondage.component';
 import { WelcomeComponent } from './escape-game/welcome/welcome.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent },
   { path: 'game', component: GameComponent },
+  { path: 'sondage', component: SondageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'enigme1', component: Enigme1Component },
   { path: 'enigme2', component: Enigme2Component },

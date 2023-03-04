@@ -19,6 +19,7 @@ import { GameService } from './game/game.service';
 import { WinComponent } from './game/win/win.component';
 import { GameoverComponent } from './game/gameover/gameover.component';
 import { FormsModule } from '@angular/forms';
+import { SondageComponent } from './sondage/sondage.component';
 
 
 
@@ -38,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     Enigme5Component,
     Enigme6Component,
     WinComponent,
-    GameoverComponent
+    GameoverComponent,
+    SondageComponent
   ],
   imports: [
     CommonModule,
