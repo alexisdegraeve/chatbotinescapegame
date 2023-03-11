@@ -4,5 +4,38 @@
         "sallejeux": "Salle des jeux",
         "sondage": "Sondage",
         "apropos": "À propos de..."
+    },
+    "button": {
+        "letsgo": "Allons-y !"
+    },
+    "bienvenue": {
+        "titre": "Bienvenue",
+        "lettre1": "Cher joueur,",
+        "lettre2": "Vous allez découvrir le monde passionant de Super Mario en escape game virtuel. <br /> N'hésitez pas à solliciter Mushroom ! Le <b>chatbot</b> disponible, en haut à droite, si vous avez besoin d'aide.",
+        "lettre3": "Bon amusement ! Good Game !",
+        "start": "Démarrer"
+    },
+    "sondage": {
+        "titre": "Sondage",
+        "sous-titre": "Étude préliminaire pour l’intégration d’un chatbot comme dispenseur d’indices dans un Escape Game",
+        "txt": " Vous êtes invité à participer à un sondage dans le cadre de ce mémoire pour l'Université de Namur. <br/> Pourriez-vous répondre aux questions du sondage après avoir participé au jeu ?",
+        "merci": "D'avance merci !",
+        "button": "Sondage"
+    },
+    "about": {
+        "titre": "Crédits",
+        "creation": "Création & Webdesign",
+        "images": "Images"
+    },
+    "game": {
+        "room": "SALLE",
+        "enigmes": "INDICES",
+        "youwin": "TU GAGNES",
+        "youwintxt": "Félicitation, vous avez gagné avec un score de",
+        "rejouer": "Rejouer",
+        "gameovertxt": "Désolé vous avez perdu !",
+        "tuperds": "Tu perds !",
+        "bravo": "Bravo !"
     }
+
 }

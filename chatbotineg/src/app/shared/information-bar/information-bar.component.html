@@ -1,6 +1,6 @@
 <div class="information-bar" *ngIf="showInformationBar">
     <div class="room">
-        ROOM {{ roomNumber }}
+        {{ 'game.room' | translate }} {{ roomNumber }}
     </div>
     <div class="score">
         SCORE: {{ score }}
@@ -9,7 +9,7 @@
         <app-timer></app-timer>
     </div>
     <div class="enigmes">
-        ENIGMES:
+        {{ 'game.enigmes' | translate }}:
         <div class="key" *ngFor="let enigme of enigmes" [class.notfound]="!enigme"></div>
     </div>
 </div>

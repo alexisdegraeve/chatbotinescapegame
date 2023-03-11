@@ -25,7 +25,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent,
     InformationBarComponent,
     TimerComponent,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   providers: [
     GameService

@@ -16,10 +16,10 @@
             <div class="square" style="color:blue" [class.animate]="animateBox4" (click)="playCase(4)"></div>
         </div>
         <div class="alert alert-danger" role="alert" *ngIf="wrong">
-            <span class="win-lose">Tu perds !</span>
+            <span class="win-lose">{{ 'game.tuperds' | translate}}</span>
         </div>
         <div class="alert alert-success" role="alert" *ngIf="win">
-            <span class="win-lose">Bravo !</span>
+            <span class="win-lose">{{ 'game.bravo' | translate}}</span>
         </div>
     </div>
 </div>

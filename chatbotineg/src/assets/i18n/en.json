@@ -1,8 +1,40 @@
 {
     "menu": {
         "accueil": "Home",
-        "sallejeux": "Gaming room",
-        "sondage": "Interview",
+        "sallejeux": "Games room",
+        "sondage": "Survey",
         "apropos": "About..."
+    },
+    "button": {
+        "letsgo": "Let's go!"
+    },
+    "bienvenue": {
+        "titre": "Welcome",
+        "lettre1": "Dear player,",
+        "lettre2": "You will discover the exciting world of Super Mario in a virtual escape game. <br /> Do not hesitate to contact Mushroom! The <b>chatbot</b> available, top right, if you need help.",
+        "lettre3": "Good fun! Good Game!",
+        "start": "Start"
+    },
+    "sondage": {
+        "titre": "Survey",
+        "sous-titre": "Preliminary study for the integration of a chatbot as a clue dispenser in an Escape Game",
+        "txt": "You are invited to participate in a survey as part of this thesis for the University of Namur. <br/> Could you answer the survey questions after participating in the game?",
+        "merci": "Thanks in advance!",
+        "button": "Survey"
+    },
+    "about": {
+        "titre": "Credits",
+        "creation": "Creation & Webdesign",
+        "images": "Pictures"
+    },
+    "game": {
+        "room": "ROOM",
+        "enigmes": "ENIGMA",
+        "youwin": "YOU WIN",
+        "youwintxt": "Congratulations, you won with a score of ",
+        "rejouer": "Replay",
+        "gameovertxt": "Sorry you lost!",
+        "tuperds": "You lose!",
+        "bravo": "Bravo!"
     }
 }
