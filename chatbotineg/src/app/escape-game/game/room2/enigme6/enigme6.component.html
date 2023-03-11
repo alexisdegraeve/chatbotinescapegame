@@ -22,16 +22,16 @@
         </div>
 
         <div class="alert alert-danger" role="alert">
-            <b>!! Avertissement !!</b>
+            <b>{{ 'game.warning' | translate}}</b>
             <ul>
-                <li><b>2</b> personnes maximum dans la barque !</li>
-                <li>Ne laisse pas seul Luigi avec le champignon, Luigi va le manger !</li>
-                <li>Ne laisse pas seul Luigi avec Bowser, Bowser va le manger !</li>
+                <li [innerHtml]="'game.barque1' | translate"></li>
+                <li [innerHtml]="'game.barque2' | translate"></li>
+                <li [innerHtml]="'game.barque3' | translate"></li>
             </ul>
         </div>
 
 
-        <button type="button" class="btn btn-success" (click)="traverser()" *ngIf="!output">Traverser</button>
+        <button type="button" class="btn btn-success" (click)="traverser()" *ngIf="!output">{{ 'game.traverser' | translate}}</button>
     </div>
 
     <div class="container-player end">

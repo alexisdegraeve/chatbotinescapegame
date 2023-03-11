@@ -35,7 +35,12 @@
         "rejouer": "Rejouer",
         "gameovertxt": "Désolé vous avez perdu !",
         "tuperds": "Tu perds !",
-        "bravo": "Bravo !"
+        "bravo": "Bravo !",
+        "warning": "Avertissement",
+        "barque1": "<b>2</b> personnes maximum dans la barque !",
+        "barque2": "Ne laisse pas seul Luigi avec le champignon, Luigi va le manger !",
+        "barque3": "Ne laisse pas seul Luigi avec Bowser, Bowser va le manger !",
+        "traverser": "Traverser"
     }
 
 }

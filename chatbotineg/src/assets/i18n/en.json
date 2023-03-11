@@ -35,6 +35,11 @@
         "rejouer": "Replay",
         "gameovertxt": "Sorry you lost!",
         "tuperds": "You lose!",
-        "bravo": "Bravo!"
+        "bravo": "Bravo!",
+        "warning": "Warning",
+        "barque1": "<b>2</b> people maximum in the boat!",
+        "barque2": "Don't leave Luigi alone with the mushroom, Luigi will eat it!",
+        "barque3": "Don't leave Luigi alone with Bowser, Bowser will eat him!",
+        "traverser": "To cross"
     }
 }
