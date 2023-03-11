@@ -67,6 +67,14 @@
     background-size: cover;
     height: 2rem;
     width: 2rem;
+    &.pos1 {
+        margin-left: -30px !important;
+        margin-top: 15px !important;
+    }
+    &.pos2 {
+        margin-left: -30px !important;
+        margin-top: 15px !important;
+    }
 }
 
 .mushroom_bee {
