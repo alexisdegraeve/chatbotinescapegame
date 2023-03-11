@@ -19,11 +19,18 @@
                     <a class="nav-link" routerLink="/about">À propos de...</a>
                 </li>
             </ul>
-            <div>
-                <button (click)="useLanguage('en')">en</button>
-                <button (click)="useLanguage('fr')">de</button>
+
+            <div class="dropdown language ms-auto">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ currentLang }}
+              </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" (click)="useLanguage('fr')">Fr</a></li>
+                    <li><a class="dropdown-item" (click)="useLanguage('en')">En</a></li>
+                </ul>
             </div>
-            <button type="button" class="ms-auto btn btn-outline-light chatbot-button" alt="chatbot" (click)="toggleChatbot($event)">
+
+            <button type="button" class="ms-2 btn btn-outline-light chatbot-button" alt="chatbot" (click)="toggleChatbot($event)">
             </button>
         </div>
     </div>

@@ -23,4 +23,8 @@ export class MenuComponent {
   useLanguage(language: string): void {
     this.translate.use(language);
   }
+
+  get currentLang() {
+    return this.translate.currentLang;
+  }
 }
