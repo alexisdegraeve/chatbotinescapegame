@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +8,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
   showChatbot = false;
 
-  constructor(private router: Router) {
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['en', 'fr']);
+    translate.setDefaultLang('en');
+    translate.use('en');
   }
 
   changeToggleChatbot(show: boolean) {

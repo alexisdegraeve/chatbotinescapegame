@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { InformationBarComponent } from './information-bar/information-bar.component';
 import { GameService } from '../escape-game/game/game.service';
 import { TimerComponent } from './timer/timer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TimerComponent } from './timer/timer.component';
   imports: [
     CommonModule,
     RouterModule,
+    TranslateModule
   ],
   exports: [
     MenuComponent,

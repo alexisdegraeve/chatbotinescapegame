@@ -18,7 +18,6 @@ export class Enigme3Component {
   }
 
   get authorized(){
-    return true;
     return this.gameService.enigmes[0] && this.gameService.enigmes[1] && !this.gameService.enigmes[2];
   }
 

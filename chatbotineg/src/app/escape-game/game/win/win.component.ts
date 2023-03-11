@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { GameService } from '../game.service';
 
 @Component({
@@ -6,8 +6,12 @@ import { GameService } from '../game.service';
   templateUrl: './win.component.html',
   styleUrls: ['./win.component.scss']
 })
-export class WinComponent {
+export class WinComponent implements AfterViewInit{
   constructor(private gameService: GameService) {
+  }
+
+  ngAfterViewInit(): void {
+    this.gameService.startTimer = false;
   }
 
   get score() {
