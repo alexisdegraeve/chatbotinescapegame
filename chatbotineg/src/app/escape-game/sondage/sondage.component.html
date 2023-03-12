@@ -9,7 +9,7 @@
                 <p [innerHTML]="'sondage.txt' | translate"></p>
                 <p [innerHTML]="'sondage.merci' | translate"></p>
                 <br />
-                <a type="button" class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLScjHO6hu1QHxgqyaVgoAdPmYfID6J1rTeRE0dAJ-CFdJLAOXA/viewform?usp=pp_url" target="_blank">{{ 'sondage.button' | translate}}</a>
+                <a type="button" class="btn btn-primary btn-lg" [href]="currentLang==='fr' ? urlFrench : urlEnglish" target="_blank">{{ 'sondage.button' | translate}}</a>
                 <br />
             </div>
         </div>
