@@ -1,4 +1,4 @@
 <div class="panel-chat" *ngIf="show" [@enterAnimation]>
-    <iframe #myframe id="myframe" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1e88023f-dfcc-4b80-afc0-4982069fed26">
+    <iframe #myframe id="myframe" allow="microphone;" [src]="currentLang==='fr' ? urlFrench : urlEnglish">
     </iframe>
 </div>
