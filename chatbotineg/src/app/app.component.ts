@@ -10,8 +10,8 @@ export class AppComponent {
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'fr']);
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang('fr');
+    translate.use('fr');
   }
 
   changeToggleChatbot(show: boolean) {
