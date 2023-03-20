@@ -12,6 +12,7 @@ export class GameoverComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.gameService.playSoundGameover();
     this.gameService.startTimer = false;
   }
 

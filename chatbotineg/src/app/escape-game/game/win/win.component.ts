@@ -11,6 +11,7 @@ export class WinComponent implements AfterViewInit{
   }
 
   ngAfterViewInit(): void {
+    this.gameService.playSoundWorldClear();
     this.gameService.startTimer = false;
   }
 

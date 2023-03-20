@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { GameService } from '../../game.service';
   templateUrl: './enigme3.component.html',
   styleUrls: ['./enigme3.component.scss']
 })
-export class Enigme3Component {
+export class Enigme3Component  implements OnInit{
   solution = 15;
   total = 0;
   wrong = false;
@@ -15,6 +15,10 @@ export class Enigme3Component {
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
     this.gameService.roomNumber = 1;
+  }
+
+  ngOnInit(): void {
+    this.gameService.playSoundPipe();
   }
 
   get authorized(){
@@ -30,10 +34,12 @@ export class Enigme3Component {
     this.wrong = false;
     this.gameService.enigmes[2] = this.total === this.solution;
     if(this.gameService.enigmes[2]) {
+      this.gameService.playSoundStageClear();
       this.win = true;
       this.gameService.score += 200;
     } else {
       this.wrong = true;
+      this.gameService.playSoundBowserFalls();
     }
   }
 }

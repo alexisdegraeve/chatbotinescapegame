@@ -131,6 +131,7 @@ export class SimonComponent {
           setTimeout(() => {
             clearInterval(this.intervalId);
             this.gameService.enigmes[0] = true;
+            this.gameService.playSoundStageClear();
             this.gameService.showSimon = false;
           }, 2000);
         }
@@ -139,6 +140,7 @@ export class SimonComponent {
           // Perdu on recommence
           console.log('PERDU');
          this.wrong = true;
+         this.gameService.playSoundBowserFalls();
           setTimeout(() => {
             clearInterval(this.intervalId);
             this.wrong = false;

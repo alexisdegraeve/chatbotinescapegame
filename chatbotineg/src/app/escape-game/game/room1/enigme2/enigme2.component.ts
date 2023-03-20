@@ -22,6 +22,7 @@ export class Enigme2Component implements OnInit {
   }
 
   ngOnInit(): void {
+    this.gameService.playSoundPipe();
     this.showBubbble = true;
     this.startGame();
   }
@@ -43,17 +44,21 @@ export class Enigme2Component implements OnInit {
       this.gameService.score += 250;
       this.showBubbble = false;
       this.gameService.enigmes[1] = true;
+      this.gameService.playSoundStageClear();
+
     } else {
       if(this.try === 0 ) {
         console.log('PERDU');
         this.win = false;
         this.wrong = true;
+        this.gameService.playSoundBowserFalls();
         setTimeout(() => {
           this.startGame();
         }, 2000);
       } else {
         this.win = false;
         this.wrong = true;
+        this.gameService.playSoundBowserFalls();
         setTimeout(() => {
           this.win = false;
           this.wrong = false;
@@ -75,6 +80,7 @@ export class Enigme2Component implements OnInit {
   takeKeyHobbit() {
     this.gameService.score += 20;
     this.gameService.keyHobbit = true;
+    this.gameService.playSoundCoin();
   }
 
   get keyHobbit() {

@@ -76,6 +76,37 @@ export class GameService {
     //this._startTimer = false;
   }
 
+  playSoundPipe() {
+    this.playSound('smb_pipe');
+  }
+
+  playSoundBowserFalls() {
+    this.playSound('smb_bowserfalls');
+  }
+
+  playSoundGameover() {
+    this.playSound('smb_gameover');
+  }
+
+  playSoundWorldClear() {
+    this.playSound('smb_world_clear');
+  }
+
+  playSoundStageClear() {
+    this.playSound('smb_stage_clear');
+  }
+
+  playSoundCoin() {
+    this.playSound('smb_coin');
+  }
+
+  playSound(fileName: string) {
+    let audio = new Audio();
+    audio.src = `/assets/sound/${fileName}.mp3`;
+    audio.load();
+    audio.play();
+  }
+
 
   constructor() { }
 }

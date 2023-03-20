@@ -20,7 +20,9 @@ export class Enigme6Component implements OnInit{
     this.gameService.showInformationBar = true;
     this.gameService.roomNumber = 2;
   }
+
   ngOnInit(): void {
+    this.gameService.playSoundPipe();
     console.log(this.embarque);
     console.log(this.debarque);
   }
@@ -132,6 +134,7 @@ export class Enigme6Component implements OnInit{
     console.log('PERDU ' +  perdu);
     if(perdu) {
       this.wrong = true;
+      this.gameService.playSoundBowserFalls();
       setTimeout(() => {
         this.wrong = false;
         this.restartGame();
@@ -145,6 +148,7 @@ export class Enigme6Component implements OnInit{
       this.gagne = true;
       this.gameService.enigmes[5] = true;
       if(this.gameService.enigmes[5]) {
+        this.gameService.playSoundStageClear();
         this.gameService.score += 360;
         this.win = true;
       }

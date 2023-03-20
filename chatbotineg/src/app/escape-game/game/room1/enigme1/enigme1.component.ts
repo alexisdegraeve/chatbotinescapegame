@@ -1,5 +1,5 @@
 import { trigger, transition, style, animate } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
@@ -17,9 +17,10 @@ import { GameService } from '../../game.service';
     )
   ],
 })
-export class Enigme1Component {
+export class Enigme1Component implements OnInit {
 
   moveMountain() {
+    this.gameService.playSoundCoin();
     this.gameService.mountain = false;
     this.gameService.showSimon = true;
     this.gameService.score = 200;
@@ -28,6 +29,10 @@ export class Enigme1Component {
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
     this.gameService.roomNumber = 1;
+  }
+
+  ngOnInit(): void {
+    this.gameService.playSoundPipe();
   }
 
   get showMoutain() {
