@@ -20,6 +20,6 @@
 <div class="bubble-container">
     <div class="bubble">
         <div class="start"><img src="/assets/icons/start_mario.png" class="logo" /></div>
-        <button type="button" class="btn btn-danger btn-lg" routerLink="/game">{{ 'button.letsgo' | translate}}</button>
+        <button type="button" class="btn btn-danger btn-lg" (click)="playCoin()" routerLink="/game">{{ 'button.letsgo' | translate}}</button>
     </div>
 </div>

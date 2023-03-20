@@ -11,4 +11,8 @@ export class WelcomeComponent {
     this.gameService.restartGame();
     this.gameService.showInformationBar = false;
   }
+
+  playCoin() {
+    this.gameService.playSoundCoin();
+  }
 }

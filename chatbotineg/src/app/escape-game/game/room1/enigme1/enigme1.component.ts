@@ -47,4 +47,8 @@ export class Enigme1Component implements OnInit {
     return this.gameService.keyHobbit;
   }
 
+  playCoin() {
+    this.gameService.playSoundCoin();
+  }
+
 }
