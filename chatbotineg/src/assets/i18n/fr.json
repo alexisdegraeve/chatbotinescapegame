@@ -11,7 +11,7 @@
     "bienvenue": {
         "titre": "Bienvenue",
         "lettre1": "Cher joueur,",
-        "lettre2": "Vous allez découvrir le monde passionant de Super Mario en escape game virtuel. <br /> N'hésitez pas à solliciter Mushroom ! Le <b>chatbot</b> disponible, en haut à droite, si vous avez besoin d'aide.",
+        "lettre2": "Vous allez découvrir le monde passionant de Super Mario en escape game virtuel. <br /> N'hésitez pas à solliciter Toad ! Le <b>chatbot</b> disponible, en haut à droite, si vous avez besoin d'aide.",
         "lettre3": "Bon amusement ! Good Game !",
         "start": "Démarrer"
     },
@@ -38,7 +38,7 @@
         "bravo": "Bravo !",
         "warning": "Avertissement",
         "barque1": "<b>2</b> personnes maximum dans la barque !",
-        "barque2": "Ne laisse pas seul Luigi avec le champignon, Luigi va le manger !",
+        "barque2": "Ne laisse pas seul Luigi avec Toad (le champignon), Luigi va le manger !",
         "barque3": "Ne laisse pas seul Luigi avec Bowser, Bowser va le manger !",
         "traverser": "Traverser"
     }

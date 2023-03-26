@@ -11,7 +11,7 @@
     "bienvenue": {
         "titre": "Welcome",
         "lettre1": "Dear player,",
-        "lettre2": "You will discover the exciting world of Super Mario in a virtual escape game. <br /> Do not hesitate to contact Mushroom! The <b>chatbot</b> available, top right, if you need help.",
+        "lettre2": "You will discover the exciting world of Super Mario in a virtual escape game. <br /> Do not hesitate to contact Toad! The <b>chatbot</b> available, top right, if you need help.",
         "lettre3": "Good fun! Good Game!",
         "start": "Start"
     },
@@ -38,7 +38,7 @@
         "bravo": "Bravo!",
         "warning": "Warning",
         "barque1": "<b>2</b> people maximum in the boat!",
-        "barque2": "Don't leave Luigi alone with the mushroom, Luigi will eat it!",
+        "barque2": "Don't leave Luigi alone with Toad(the mushroom), Luigi will eat it!",
         "barque3": "Don't leave Luigi alone with Bowser, Bowser will eat him!",
         "traverser": "To cross"
     }
