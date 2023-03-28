@@ -396,6 +396,7 @@
     align-items: flex-end;
     position: absolute;
     bottom: 0;
+    z-index: 0;
 }
 
 .rock01 {
@@ -505,4 +506,9 @@
         margin-left: 40%;
         /* transform: scaleX(-1); */
     }
+}
+
+.btn-traverser {
+    position: fixed;
+    z-index: 200;
 }
