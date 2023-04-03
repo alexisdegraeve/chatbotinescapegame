@@ -9,10 +9,11 @@ export class AppComponent {
   showChatbot = false;
 
   constructor(private translate: TranslateService) {
-    translate.addLangs(['en', 'fr']);
-    translate.setDefaultLang('fr');
-    translate.use('fr');
+    this.translate.addLangs(['en', 'fr']);
+    this.translate.setDefaultLang('fr');
+    this.translate.use('fr');
   }
+
 
   changeToggleChatbot(show: boolean) {
     this.showChatbot = show;
