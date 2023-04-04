@@ -1,3 +1,18 @@
 .screen {
     height: 100%
 }
+
+.incompatibility {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .screen {
+        display: none;
+    }
+    .incompatibility {
+        display: block;
+        padding: 1rem;
+        font-size: 14px;
+    }
+}
