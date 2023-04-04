@@ -14,7 +14,7 @@ export class Enigme5Component implements OnInit {
 
   constructor(private gameService: GameService) {
     this.gameService.showInformationBar = true;
-    this.gameService.roomNumber = 2;
+    this.gameService.roomNumber = 5;
   }
 
   ngOnInit(): void {
