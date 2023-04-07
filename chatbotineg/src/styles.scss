@@ -2,6 +2,7 @@
 @import './scss/fonts.scss';
 @import './scss/colors.scss';
 @import './scss/sprites.scss';
+@import './scss/scrollbar.scss';
 html {
     height: 100%;
 }
@@ -14,6 +15,11 @@ body {
     overflow-x: hidden;
     --bs-border-color: #111;
     height: 100%;
+}
+
+.scroll {
+    overflow-y: scroll;
+    max-height: 75vh;
 }
 
 @media only screen and (max-width: 600px) {

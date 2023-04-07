@@ -1,13 +1,21 @@
 <div class="container" *ngIf="show">
     <div class="row align-items-center h-100 mt-4">
-        <div class="p-5 mb-4 bg-dark rounded-3">
+        <div class="p-5 mb-4 bg-dark rounded-3 scroll">
             <div class="container-fluid">
-                <h1 class="display-5 fw-bold">{{ 'bienvenue.titre' | translate }}</h1>
+                <h1>{{ 'bienvenue.titre' | translate }}</h1>
                 <hr />
-                <div class="fs-5">
+                <div class="my-2 d-flex pb-4">
+                    <button class="btn btn-primary btn-lg ms-auto" type="button" (click)="startGame()">{{ 'bienvenue.start' | translate }}</button>
+                </div>
+
+                <div>
                     <p [innerHtml]="'bienvenue.lettre1' | translate"></p>
                     <p [innerHtml]="'bienvenue.lettre2' | translate"></p>
                 </div>
+                <p>
+                    <b>Veuillez noter que ce chatbot d'escape game est actuellement en mode POC (Proof of Concept), ce qui signifie que certaines fonctionnalités peuvent ne pas être disponibles ou que des bugs peuvent survenir. Nous vous remercions d'avance pour votre aide
+                    et vos retours, qui nous permettront d'améliorer cette expérience. Sachez que ce POC est avant tout destiné à tester le chatbot, alors n'hésitez pas à nous faire part de vos commentaires et à vous amuser !</b>
+                </p>
                 <div>
                     <span>{{ 'bienvenue.reglestart' | translate }}</span>
                     <ul>
@@ -22,10 +30,27 @@
                         <li>{{ 'bienvenue.regle9' | translate }}</li>
                         <li>{{ 'bienvenue.regle10' | translate }}</li>
                     </ul>
-                    <span>{{ 'bienvenue.reglefin' | translate }}</span>
+                    <span>Pour communiquer avec le chatbot :</span>
+                </div>
+                <div>
+                    <ul>
+                        <li>Pour commencer, dites "salut" ou "bonjour" pour que le chatbot vous réponde.</li>
+                        <li>Si vous êtes bloqué et que vous avez besoin d'aide, écrivez "je suis bloqué" ou "aidez-moi" ou toute autre formulation de demande d'aide.</li>
+                        <li>Le chatbot vous posera alors la question "Pouvez-vous me dire ce que vous voyez dans la pièce ?" pour mieux comprendre votre situation.</li>
+                        <li>Si vous ne savez pas quoi répondre, essayez de décrire ce que vous voyez dans la pièce aussi précisément que possible.</li>
+                        <li>Si vous ne trouvez pas d'indice après avoir répondu à la première question, le chatbot vous posera une deuxième question pour obtenir plus de détails. Si vous répondez "non" à cette question, le chatbot vous donnera alors un premier
+                            indice.
+                        </li>
+                        <li>Si vous ne trouvez toujours pas de solution après avoir suivi le premier indice, le chatbot vous proposera un deuxième indice si vous répondez "non" à la deuxième question.</li>
+                        <li>Si vous avez besoin de nouvelles questions ou de nouveaux indices, n'hésitez pas à redemander à tout moment.</li>
+                        <li>N'oubliez pas de continuer à explorer la pièce et à chercher des indices pour vous aider à vous échapper !</li>
+                    </ul>
+                    <p>
+                        J'espère que ces instructions vous aideront à profiter de votre expérience d'escape game avec le chatbot. Bonne chance pour vous échapper de la pièce !
+                    </p>
                 </div>
                 <br />
-                <button class="btn btn-primary btn-lg" type="button" (click)="startGame()">{{ 'bienvenue.start' | translate }}</button>
+
                 <br />
             </div>
         </div>
