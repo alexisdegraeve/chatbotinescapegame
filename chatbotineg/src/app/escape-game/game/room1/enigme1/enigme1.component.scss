@@ -152,3 +152,15 @@
         width: 35vw;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .porte {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .porte {
+        width: 60vw;
+    }
+}
