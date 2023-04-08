@@ -2,13 +2,13 @@
 
 
     <div class="container-player">
-        <div class="select-player" (click)="selectLuigi()">
+        <div class="select-player" (click)="selectLuigi(true)">
             <div class="luigi" *ngIf="embarque[0]"></div>
         </div>
-        <div class="select-player" (click)="selectMushroom()">
+        <div class="select-player" (click)="selectMushroom(true)">
             <div class="mushroom" *ngIf="embarque[1]"></div>
         </div>
-        <div class="select-player" (click)="selectBowser()">
+        <div class="select-player" (click)="selectBowser(true)">
             <div class="bowser" *ngIf="embarque[2]"></div>
         </div>
     </div>
@@ -35,13 +35,13 @@
     </div>
 
     <div class="container-player end">
-        <div class="select-player" (click)="selectLuigi()">
+        <div class="select-player" (click)="selectLuigi(false)">
             <div class="luigi" *ngIf="debarque[0]"></div>
         </div>
-        <div class="select-player" (click)="selectMushroom()">
+        <div class="select-player" (click)="selectMushroom(false)">
             <div class="mushroom" *ngIf="debarque[1]"></div>
         </div>
-        <div class="select-player" (click)="selectBowser()">
+        <div class="select-player" (click)="selectBowser(false)">
             <div class="bowser" *ngIf="debarque[2]"></div>
         </div>
     </div>
@@ -66,7 +66,6 @@
         <div class="rock01"></div>
         <div class="bottom-grass"></div>
         <div class="rock02"></div>
-        <div class="grass3"></div>
     </div>
 
 </div>

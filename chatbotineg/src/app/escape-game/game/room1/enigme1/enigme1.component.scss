@@ -40,8 +40,8 @@
 }
 
 .porte {
-    height: 50vh;
-    width: 30vw;
+    height: 60vh;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,4 +137,18 @@
 
 .simon {
     align-self: flex-start;
+}
+
+@media only screen and (max-height: 768px) {
+    .porte {
+        height: 60vh;
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    .porte {
+        height: 60vh;
+        width: 35vw;
+    }
 }

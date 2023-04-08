@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class GameService {
   private _showSimon = false;
   private _score = 0;
-  private _enigmes = [true, true, false, false, false, false];
+  private _enigmes = [false, false, false, false, false, false];
   private _roomNumber = 1;
   private _showInformationBar = false;
   private _keyHobbit = false;

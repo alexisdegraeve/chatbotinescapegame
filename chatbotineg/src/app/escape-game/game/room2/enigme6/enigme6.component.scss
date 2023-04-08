@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     transform: scale(0.7);
-    position: absolute;
     left: 1rem;
     &.end {
         justify-content: flex-end;
@@ -79,7 +78,6 @@
     bottom: 0;
     z-index: 20;
     transform: scaleX(-1);
-    left: 20rem;
 }
 
 .mushroom {
@@ -93,7 +91,7 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 30rem;
+    left: 10rem;
     bottom: 7rem;
 }
 
@@ -108,7 +106,7 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 29rem;
+    left: 9rem;
     bottom: 6rem;
 }
 
@@ -123,7 +121,6 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 20rem;
     bottom: 6rem;
 }
 
@@ -138,7 +135,7 @@
     position: absolute;
     bottom: 1rem;
     z-index: 25;
-    left: 30rem;
+    left: 10rem;
     bottom: 6.8rem
 }
 
@@ -330,18 +327,6 @@
     animation: myanim2 1s normal linear forwards;
 }
 
-.sink_red {
-    z-index: 50;
-    cursor: pointer;
-    height: 25vh;
-    width: 10vw;
-    right: 2rem;
-    -webkit-animation: myanim 1s normal linear forwards;
-    -moz-animation: myanim 1s normal linear forwards;
-    -o-animation: myanim 1s normal linear forwards;
-    animation: myanim 1s normal linear forwards;
-}
-
 .panel_exit {
     display: flex;
     background-image: url(/assets/img/exit_red.png);
@@ -410,13 +395,14 @@
 }
 
 .full-grass {
-    height: 300px;
+    height: 21vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
     position: absolute;
     bottom: 0;
     z-index: 0;
+    pointer-events: none;
 }
 
 .rock01 {
@@ -427,10 +413,9 @@
     background-repeat: no-repeat;
     background-image: url(/assets/img/rock01.png);
     position: absolute;
-    background-position: 0 2rem;
-    z-index: 30;
+    z-index: 15;
     transform: scale(0.5);
-    transform-origin: right bottom;
+    transform-origin: 10vw bottom;
 }
 
 .rock02 {
@@ -442,14 +427,13 @@
     background-image: url(/assets/img/rock02.png);
     position: absolute;
     right: 0;
-    z-index: 35;
+    z-index: 15;
     transform: scale(0.5);
-    transform-origin: left bottom;
-    margin-right: -1rem;
+    transform-origin: 120% 110%;
 }
 
 .grass2 {
-    z-index: 30;
+    z-index: 10;
     transform: scale(0.5);
     background-repeat: no-repeat;
     transform-origin: left bottom;
@@ -524,11 +508,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: 0;
+    margin-left: 5rem;
     transition: all 0.5s ease;
     transform: scale(0.6);
     &.rive-droite {
-        margin-left: 60vw;
+        margin-left: calc(100% - 18rem);
         /* transform: scaleX(-1); */
     }
 }
@@ -536,4 +520,9 @@
 .btn-traverser {
     position: fixed;
     z-index: 200;
+}
+
+.info-win {
+    right: 0;
+    top: 15vh;
 }

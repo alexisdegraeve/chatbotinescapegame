@@ -34,8 +34,11 @@ export class Enigme6Component implements OnInit{
     this.checkGame();
   }
 
-  selectLuigi(){
+  selectLuigi(debut: boolean){
+    console.log('select luigi');
+    if (!debut && !this.rive_droite) return;
     if (this.barque > 0) return;
+    console.log(this.barque);
     if (this.rive_droite) {
       this.debarque[0] = false;
       this.barque = 1;
@@ -45,7 +48,8 @@ export class Enigme6Component implements OnInit{
     }
   }
 
-  selectMushroom() {
+  selectMushroom(debut: boolean) {
+    if (!debut && !this.rive_droite) return;
     if (this.barque > 0) return;
     if (this.rive_droite) {
       this.debarque[1] = false;
@@ -56,7 +60,8 @@ export class Enigme6Component implements OnInit{
     }
   }
 
-  selectBowser(){
+  selectBowser(debut: boolean){
+    if (!debut && !this.rive_droite) return;
     if (this.barque > 0) return;
     if (this.rive_droite) {
       this.debarque[2] = false;
@@ -70,6 +75,7 @@ export class Enigme6Component implements OnInit{
 
 
   unselectLuigi(){
+    console.log('unselect luigi');
     if (this.rive_droite) {
       this.debarque[0] = true;
       this.barque = 0;
