@@ -1,14 +1,23 @@
 .container-player {
     display: flex;
     flex-direction: row;
+    transform: scale(0.7);
+    position: absolute;
+    left: 1rem;
     &.end {
         justify-content: flex-end;
+        right: 1rem;
     }
 }
 
 .middle {
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.5vh;
+    white-space: nowrap;
+    position: absolute;
+    top: 25vh;
+    right: 5rem;
 }
 
 .select-player {
@@ -309,18 +318,28 @@
 }
 
 .sink_green {
-    height: 200px;
-    width: 150px;
     position: absolute;
+    height: 25vh;
     left: 10rem;
     top: 4.6rem;
     transform: scaleY(-1);
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
+    -webkit-animation: myanim2 1s normal linear forwards;
+    -moz-animation: myanim2 1s normal linear forwards;
+    -o-animation: myanim2 1s normal linear forwards;
+    animation: myanim2 1s normal linear forwards;
 }
 
 .sink_red {
     z-index: 50;
     cursor: pointer;
+    height: 25vh;
+    width: 10vw;
+    right: 2rem;
+    -webkit-animation: myanim 1s normal linear forwards;
+    -moz-animation: myanim 1s normal linear forwards;
+    -o-animation: myanim 1s normal linear forwards;
+    animation: myanim 1s normal linear forwards;
 }
 
 .panel_exit {
@@ -338,11 +357,12 @@
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-.enigme5 {
+.enigme6 {
     background-color: #6fc9e7;
     height: calc(100% - 142px);
     display: flex;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(#040837, #2a4891, #1a326e 80%, #042476 100%);
 }
 
@@ -407,9 +427,10 @@
     background-repeat: no-repeat;
     background-image: url(/assets/img/rock01.png);
     position: absolute;
-    left: 9.5rem;
     background-position: 0 2rem;
     z-index: 30;
+    transform: scale(0.5);
+    transform-origin: right bottom;
 }
 
 .rock02 {
@@ -420,28 +441,31 @@
     background-repeat: no-repeat;
     background-image: url(/assets/img/rock02.png);
     position: absolute;
-    right: 5rem;
-    background-position: 0 2rem;
+    right: 0;
     z-index: 35;
+    transform: scale(0.5);
+    transform-origin: left bottom;
+    margin-right: -1rem;
 }
 
 .grass2 {
-    height: 250px;
-    width: 20rem;
-    display: flex;
-    background-size: initial;
-    background-image: url(/assets/img/grass2.png);
     z-index: 30;
+    transform: scale(0.5);
+    background-repeat: no-repeat;
+    transform-origin: left bottom;
+    width: 20vw;
 }
 
 .grass3 {
     margin-left: auto;
-    height: 250px;
+    height: 30vh;
     width: 20rem;
     display: flex;
     background-size: initial;
     background-image: url(/assets/img/grass2.png);
     z-index: 30;
+    transform: scale(0.5);
+    transform-origin: right bottom;
 }
 
 @-webkit-keyframes pulse {
@@ -502,8 +526,9 @@
     left: 0;
     margin-left: 0;
     transition: all 0.5s ease;
+    transform: scale(0.6);
     &.rive-droite {
-        margin-left: 40%;
+        margin-left: 60vw;
         /* transform: scaleX(-1); */
     }
 }

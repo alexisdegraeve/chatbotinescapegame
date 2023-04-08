@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
+    transform: scale(0.7);
 }
 
 .place-parking {
@@ -203,20 +204,20 @@
 }
 
 .sink_green1 {
-    height: 200px;
-    width: 150px;
     position: absolute;
     left: 10rem;
-    top: 4.6rem;
+    top: 2.6rem;
     transform: scaleY(-1);
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
+    -webkit-animation: myanim2 1s normal linear forwards;
+    -moz-animation: myanim2 1s normal linear forwards;
+    -o-animation: myanim2 1s normal linear forwards;
+    animation: myanim2 1s normal linear forwards;
 }
 
 .sink_green2 {
-    height: 350px;
-    width: 140px;
     position: absolute;
-    right: 0rem;
+    right: 2rem;
     bottom: 0rem;
     z-index: 0;
     background-size: contain;
@@ -284,11 +285,6 @@
 }
 
 .grass2 {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    background-size: initial;
-    background-image: url(/assets/img/grass2.png);
     filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
 }
 

@@ -1,14 +1,35 @@
+.full-grass {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    z-index: 40;
+    pointer-events: none;
+}
+
+.grass2 {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    background-size: auto;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    background-image: url(/assets/img/grass2.png);
+}
+
 .sink_green {
     display: flex;
     background-image: url(/assets/img/sink_green.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 20px;
-    height: 350px;
-    width: 140px;
+    background-size: 90% 100%;
+    background-position-y: bottom;
+    height: 35vh;
+    width: 9vw;
     position: absolute;
-    right: 10rem;
-    bottom: 0rem;
+    right: 5vw;
+    bottom: 0;
     z-index: 20;
     -webkit-animation: myanim 1s normal linear;
     -moz-animation: myanim 1s normal linear;
@@ -21,10 +42,6 @@
     background-image: url(/assets/img/sink_red.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
-    width: 150px;
-    position: absolute;
-    right: 0.25rem;
     bottom: 0;
     z-index: 30;
     -webkit-animation: myanim 1s normal linear;
@@ -35,39 +52,78 @@
 
 @-webkit-keyframes myanim {
     0% {
-        background-position-y: 10rem;
+        bottom: -10rem;
     }
     100% {
-        background-position-y: 0rem;
+        bottom: 0rem;
     }
 }
 
 @-moz-keyframes myanim {
     0% {
-        background-position-y: 10rem;
+        bottom: -10rem;
     }
     100% {
-        background-position-y: 0rem;
+        bottom: 0rem;
     }
     /* set this to the width of the image */
 }
 
 @-o-keyframes myanim {
     0% {
-        background-position-y: 10rem;
+        bottom: -10rem;
     }
     100% {
-        background-position-y: 0rem;
+        bottom: 0rem;
     }
     /* set this to the width of the image */
 }
 
 @keyframes myanim {
     0% {
-        background-position-y: 10rem;
+        bottom: -10rem;
     }
     100% {
-        background-position-y: 0rem;
+        bottom: 0rem;
+    }
+    /* set this to the width of the image */
+}
+
+@-webkit-keyframes myanim2 {
+    0% {
+        background-position-y: 150px;
+    }
+    100% {
+        background-position-y: 0;
+    }
+}
+
+@-moz-keyframes myanim2 {
+    0% {
+        background-position-y: 150px;
+    }
+    100% {
+        background-position-y: 0;
+    }
+    /* set this to the width of the image */
+}
+
+@-o-keyframes myanim2 {
+    0% {
+        background-position-y: 150px;
+    }
+    100% {
+        background-position-y: 0;
+    }
+    /* set this to the width of the image */
+}
+
+@keyframes myanim2 {
+    0% {
+        background-position-y: 150px;
+    }
+    100% {
+        background-position-y: 0;
     }
     /* set this to the width of the image */
 }
@@ -86,5 +142,11 @@
 @keyframes glowanim {
     50% {
         box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sink_green {
+        background-size: 100% 80%;
     }
 }

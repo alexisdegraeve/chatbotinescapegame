@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.6);
+    transform: scale(0.5);
     margin-bottom: 20rem;
     margin-right: 50%;
 }
@@ -142,8 +142,6 @@
 
 .sink_green2 {
     background-size: contain;
-    height: 350px;
-    width: 140px;
     position: absolute;
     right: 10rem;
     bottom: 0rem;
@@ -151,12 +149,14 @@
 }
 
 .sink_green1 {
-    height: 200px;
-    width: 150px;
     position: absolute;
     left: 10rem;
     top: 4.6rem;
     transform: scaleY(-1);
+    -webkit-animation: myanim2 1s normal linear forwards;
+    -moz-animation: myanim2 1s normal linear forwards;
+    -o-animation: myanim2 1s normal linear forwards;
+    animation: myanim2 1s normal linear forwards;
 }
 
 .enigme4 {
@@ -218,14 +218,6 @@
     align-items: flex-end;
     position: absolute;
     bottom: 0;
-}
-
-.grass2 {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    background-size: initial;
-    background-image: url(/assets/img/grass2.png);
 }
 
 @-webkit-keyframes pulse {

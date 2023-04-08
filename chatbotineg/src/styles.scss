@@ -11,7 +11,7 @@ body {
     background-image: linear-gradient(to right bottom, #8400ae, #6a18a3, #521f97, #3a2289, #23227a, #482179, #622176, #772272, #b12b6c, #dd495d, #f87648, #ffa837);
     background-color: #000;
     color: #fff;
-    font-size: 16px;
+    font-size: 2vh;
     overflow-x: hidden;
     --bs-border-color: #111;
     height: 100%;
@@ -36,7 +36,7 @@ body {
 
 .title-mario {
     font-family: SuperMario;
-    font-size: 10rem;
+    font-size: 17vh;
     text-shadow: 10px 10px black;
     span {
         -webkit-text-stroke: 3px #666;
@@ -53,8 +53,9 @@ body {
 }
 
 .info-win {
-    align-self: center;
     position: absolute;
-    top: 10rem;
+    top: 15vh;
     z-index: 100;
+    right: 0;
+    transform: scale(0.7);
 }

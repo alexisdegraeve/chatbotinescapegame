@@ -1,7 +1,3 @@
-.sink_green {
-    background-size: contain;
-}
-
 .enigme1 {
     background-color: #6fc9e7;
     height: calc(100% - 142px);
@@ -13,8 +9,8 @@
 
 .mountain {
     z-index: 60;
-    height: 594px;
-    width: 649px;
+    height: 60vh;
+    width: 54vw;
     background-image: url(/assets/img/mountain.png);
     background-repeat: no-repeat;
     display: flex;
@@ -25,8 +21,9 @@
     position: absolute;
     margin-left: 4rem;
     bottom: 0rem;
-    background-position-y: 100px;
-    cursor: pointer
+    background-position-y: 5vh;
+    background-position-x: center;
+    cursor: pointer;
 }
 
 .porte_hobbit {
@@ -43,15 +40,17 @@
 }
 
 .porte {
-    height: 320px;
-    width: 370px;
+    height: 50vh;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 4rem;
+    bottom: 2vh;
     z-index: 50;
     cursor: pointer;
+    transform: scale(0.6);
+    transform-origin: bottom;
 }
 
 .porte_hobbit_cadre {
@@ -78,21 +77,14 @@
 }
 
 .full-grass {
-    height: 300px;
+    height: 5vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
     position: absolute;
     bottom: 0;
     z-index: 40;
-}
-
-.grass2 {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    background-size: initial;
-    background-image: url(/assets/img/grass2.png);
+    pointer-events: none;
 }
 
 @-webkit-keyframes pulse {

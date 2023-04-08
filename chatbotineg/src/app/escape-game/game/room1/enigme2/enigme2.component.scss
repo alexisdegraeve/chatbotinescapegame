@@ -3,12 +3,15 @@
 }
 
 .sink_green {
-    height: 200px;
-    width: 150px;
+    height: 20vh;
     position: absolute;
     left: 10rem;
     top: 4.6rem;
     transform: scaleY(-1);
+    -webkit-animation: myanim2 1s normal linear forwards;
+    -moz-animation: myanim2 1s normal linear forwards;
+    -o-animation: myanim2 1s normal linear forwards;
+    animation: myanim2 1s normal linear forwards;
 }
 
 .position-key {
@@ -108,24 +111,6 @@
     background-repeat: no-repeat;
     transform: rotateY(0deg);
     transform-origin: 450px 350px;
-}
-
-.full-grass {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 0;
-    z-index: 20;
-}
-
-.grass2 {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    background-size: initial;
-    background-image: url(/assets/img/grass2.png);
 }
 
 @-webkit-keyframes pulse {
