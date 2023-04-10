@@ -206,7 +206,7 @@
 .sink_green1 {
     position: absolute;
     left: 10rem;
-    top: 2.6rem;
+    top: 4.6rem;
     transform: scaleY(-1);
     filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(10deg);
     -webkit-animation: myanim2 1s normal linear forwards;
@@ -225,7 +225,7 @@
 
 .enigme5 {
     background-color: #6fc9e7;
-    height: calc(100% - 142px);
+    height: calc(100% - 150px);
     display: flex;
     justify-content: center;
     align-items: center;
