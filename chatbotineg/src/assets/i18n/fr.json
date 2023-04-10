@@ -41,7 +41,7 @@
     },
     "game": {
         "room": "SALLE",
-        "enigmes": "INDICES",
+        "enigmes": "ENIGMES",
         "youwin": "TU GAGNES",
         "youwintxt": "Félicitation, vous avez gagné avec un score de",
         "rejouer": "Rejouer",
