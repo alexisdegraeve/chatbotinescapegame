@@ -38,15 +38,15 @@
 }
 
 .sink_red {
-    height: 25vh;
-    width: 10vw;
-    right: 2rem;
+    height: 23vh;
+    width: 6vw;
+    right: 1rem;
     display: flex;
     background-image: url(/assets/img/sink_red.png);
     background-repeat: no-repeat;
     background-size: 90% 100%;
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     z-index: 50;
     -webkit-animation: myanim 1s normal linear forwards;
     -moz-animation: myanim 1s normal linear forwards;
@@ -56,39 +56,39 @@
 
 @-webkit-keyframes myanim {
     0% {
-        bottom: -10rem;
+        background-position-y: 35vh;
     }
     100% {
-        bottom: 0rem;
+        background-position-y: 0;
     }
 }
 
 @-moz-keyframes myanim {
     0% {
-        bottom: -10rem;
+        background-position-y: 35vh;
     }
     100% {
-        bottom: 0rem;
+        background-position-y: 0;
     }
     /* set this to the width of the image */
 }
 
 @-o-keyframes myanim {
     0% {
-        bottom: -10rem;
+        background-position-y: 35vh;
     }
     100% {
-        bottom: 0rem;
+        background-position-y: 0;
     }
     /* set this to the width of the image */
 }
 
 @keyframes myanim {
     0% {
-        bottom: -10rem;
+        background-position-y: 35vh;
     }
     100% {
-        bottom: 0rem;
+        background-position-y: 0;
     }
     /* set this to the width of the image */
 }
