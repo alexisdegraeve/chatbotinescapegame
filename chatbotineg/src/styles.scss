@@ -58,3 +58,8 @@ body {
     z-index: 100;
     transform: scale(0.7);
 }
+
+.scrollmax {
+    overflow-y: auto;
+    max-height: 75vh;
+}
