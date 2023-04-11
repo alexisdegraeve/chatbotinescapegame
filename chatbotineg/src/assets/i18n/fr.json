@@ -43,7 +43,7 @@
         "room": "SALLE",
         "enigmes": "ENIGMES",
         "youwin": "TU GAGNES",
-        "youwintxt": "Félicitation, vous avez gagné avec un score de",
+        "youwintxt": "Félicitation, vous avez gagné avec un score de ",
         "rejouer": "Rejouer",
         "gameovertxt": "Désolé vous avez perdu !",
         "tuperds": "Tu perds !",
