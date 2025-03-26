@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
-  selector: 'app-enigme2',
-  templateUrl: './enigme2.component.html',
-  styleUrls: ['./enigme2.component.scss']
+    selector: 'app-enigme2',
+    templateUrl: './enigme2.component.html',
+    styleUrls: ['./enigme2.component.scss'],
+    standalone: false
 })
 export class Enigme2Component implements OnInit {
   max_x= 10;

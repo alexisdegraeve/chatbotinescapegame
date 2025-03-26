@@ -2,9 +2,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { GameService } from '../game.service';
 
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss']
+    selector: 'app-info',
+    templateUrl: './info.component.html',
+    styleUrls: ['./info.component.scss'],
+    standalone: false
 })
 export class InfoComponent {
   @Input()show = false;

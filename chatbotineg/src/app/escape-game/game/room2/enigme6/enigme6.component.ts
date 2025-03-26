@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
-  selector: 'app-enigme6',
-  templateUrl: './enigme6.component.html',
-  styleUrls: ['./enigme6.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-enigme6',
+    templateUrl: './enigme6.component.html',
+    styleUrls: ['./enigme6.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class Enigme6Component implements OnInit{
   rive_droite = false;

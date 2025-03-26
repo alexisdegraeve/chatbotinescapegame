@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { GameService } from '../game/game.service';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss']
+    selector: 'app-welcome',
+    templateUrl: './welcome.component.html',
+    styleUrls: ['./welcome.component.scss'],
+    standalone: false
 })
 export class WelcomeComponent {
   constructor(private gameService: GameService) {

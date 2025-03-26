@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
-  selector: 'app-enigme3',
-  templateUrl: './enigme3.component.html',
-  styleUrls: ['./enigme3.component.scss']
+    selector: 'app-enigme3',
+    templateUrl: './enigme3.component.html',
+    styleUrls: ['./enigme3.component.scss'],
+    standalone: false
 })
 export class Enigme3Component  implements OnInit{
   solution = 15;

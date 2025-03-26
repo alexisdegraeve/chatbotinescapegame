@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { GameService } from './game.service';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+    selector: 'app-game',
+    templateUrl: './game.component.html',
+    styleUrls: ['./game.component.scss'],
+    standalone: false
 })
 export class GameComponent implements OnDestroy {
   showInfo = true;

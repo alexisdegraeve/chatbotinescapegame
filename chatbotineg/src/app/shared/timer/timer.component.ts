@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { GameService } from 'src/app/escape-game/game/game.service';
 
 @Component({
-  selector: 'app-timer',
-  templateUrl: './timer.component.html',
-  styleUrls: ['./timer.component.scss']
+    selector: 'app-timer',
+    templateUrl: './timer.component.html',
+    styleUrls: ['./timer.component.scss'],
+    standalone: false
 })
 export class TimerComponent implements OnInit, OnDestroy {
 

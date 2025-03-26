@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { GameService } from '../../game.service';
 
 @Component({
-  selector: 'app-enigme4',
-  templateUrl: './enigme4.component.html',
-  styleUrls: ['./enigme4.component.scss']
+    selector: 'app-enigme4',
+    templateUrl: './enigme4.component.html',
+    styleUrls: ['./enigme4.component.scss'],
+    standalone: false
 })
 export class Enigme4Component implements OnInit {
   moveMatche = false;

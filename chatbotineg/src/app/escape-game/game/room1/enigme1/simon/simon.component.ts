@@ -3,23 +3,22 @@ import { Component, Input } from '@angular/core';
 import { GameService } from '../../../game.service';
 
 @Component({
-  selector: 'app-simon',
-  templateUrl: './simon.component.html',
-  styleUrls: ['./simon.component.scss'],
-  animations: [
-    trigger(
-      'enterAnimation', [
-        transition(':enter', [
-          style({transform: 'translateY(-10%)', opacity: 0}),
-          animate('500ms', style({transform: 'translateY(0)', opacity: 1}))
-        ]),
-        transition(':leave', [
-          style({transform: 'translateY(0)', opacity: 1}),
-          animate('500ms', style({transform: 'translateY(-10%)', opacity: 0}))
+    selector: 'app-simon',
+    templateUrl: './simon.component.html',
+    styleUrls: ['./simon.component.scss'],
+    animations: [
+        trigger('enterAnimation', [
+            transition(':enter', [
+                style({ transform: 'translateY(-10%)', opacity: 0 }),
+                animate('500ms', style({ transform: 'translateY(0)', opacity: 1 }))
+            ]),
+            transition(':leave', [
+                style({ transform: 'translateY(0)', opacity: 1 }),
+                animate('500ms', style({ transform: 'translateY(-10%)', opacity: 0 }))
+            ])
         ])
-      ]
-    )
-  ],
+    ],
+    standalone: false
 })
 export class SimonComponent {
   @Input()showSimon = false;
