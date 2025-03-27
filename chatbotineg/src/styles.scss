@@ -1,8 +1,8 @@
+@use './scss/fonts.scss';
+@use './scss/colors.scss';
+@use './scss/sprites.scss';
+@use './scss/scrollbar.scss';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
-@import './scss/fonts.scss';
-@import './scss/colors.scss';
-@import './scss/sprites.scss';
-@import './scss/scrollbar.scss';
 html {
     height: 100%;
 }
