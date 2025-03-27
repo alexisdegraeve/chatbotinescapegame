@@ -164,3 +164,17 @@
         width: 60vw;
     }
 }
+
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+    .mountain {
+        height: 50vh;
+        width: 84vw;
+        margin-left: auto;
+    }
+    .porte {
+        width: 120vw;
+    }
+}

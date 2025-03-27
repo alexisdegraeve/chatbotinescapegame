@@ -1,65 +1,69 @@
-@use './scss/fonts.scss';
-@use './scss/colors.scss';
-@use './scss/sprites.scss';
-@use './scss/scrollbar.scss';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
-html {
-    height: 100%;
-}
-
-body {
-    background-image: linear-gradient(to right bottom, #8400ae, #6a18a3, #521f97, #3a2289, #23227a, #482179, #622176, #772272, #b12b6c, #dd495d, #f87648, #ffa837);
-    background-color: #000;
-    color: #fff;
-    font-size: 2vh;
-    overflow-x: hidden;
-    --bs-border-color: #111;
-    height: 100%;
-}
-
-.scroll {
-    overflow-y: scroll;
-    max-height: 75vh;
-}
-
-@media only screen and (max-width: 600px) {
-    h5 {
-        font-size: 18px;
-    }
-    body {
-        font-size: 14px;
-    }
-}
-
-
-/* Common Style */
-
-.title-mario {
-    font-family: SuperMario;
-    font-size: 17vh;
-    text-shadow: 10px 10px black;
-    span {
-        -webkit-text-stroke: 3px #666;
-    }
-}
-
-.win-lose {
-    font-family: SuperMario;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px black;
-    span {
-        -webkit-text-stroke: 3px #666;
-    }
-}
-
-.info-win {
-    position: absolute;
-    top: 20vh;
-    z-index: 100;
-    transform: scale(0.7);
-}
-
-.scrollmax {
-    overflow-y: auto;
-    max-height: 75vh;
-}
+            @use './scss/fonts.scss';
+            @use './scss/colors.scss';
+            @use './scss/sprites.scss';
+            @use './scss/scrollbar.scss';
+            @import '@fortawesome/fontawesome-free/css/all.min.css';
+            html {
+                height: 100%;
+            }
+            
+            body {
+                background-image: linear-gradient(to right bottom, #8400ae, #6a18a3, #521f97, #3a2289, #23227a, #482179, #622176, #772272, #b12b6c, #dd495d, #f87648, #ffa837);
+                background-color: #000;
+                color: #fff;
+                font-size: 2vh;
+                overflow-x: hidden;
+                --bs-border-color: #111;
+                height: 100%;
+            }
+            
+            .scroll {
+                overflow-y: scroll;
+                max-height: 75vh;
+            }
+            
+            @media only screen and (max-width: 600px) {
+                h5 {
+                    font-size: 18px;
+                }
+                body {
+                    font-size: 14px;
+                }
+            }
+            /* Common Style */
+            
+            .title-mario {
+                font-family: SuperMario;
+                font-size: 17vh;
+                text-shadow: 10px 10px black;
+                span {
+                    -webkit-text-stroke: 3px #666;
+                }
+            }
+            
+            .win-lose {
+                font-family: SuperMario;
+                font-size: 1.5rem;
+                text-shadow: 2px 2px black;
+                span {
+                    -webkit-text-stroke: 3px #666;
+                }
+            }
+            
+            .info-win {
+                position: absolute;
+                top: 20vh;
+                z-index: 100;
+                transform: scale(0.7);
+            }
+            
+            .scrollmax {
+                overflow-y: auto;
+                max-height: 75vh;
+            }
+            
+            @media screen and (max-width: 580px) {
+                .title-mario {
+                    font-size: 5.5rem;
+                }
+            }

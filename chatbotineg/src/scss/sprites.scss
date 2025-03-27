@@ -154,3 +154,12 @@
         background-size: 100% 80%;
     }
 }
+
+
+/* smartphone */
+
+@media (max-width: 768px) {
+    .sink_green {
+        width: 18vw;
+    }
+}
