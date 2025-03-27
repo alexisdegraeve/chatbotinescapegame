@@ -348,3 +348,10 @@
     color: #fff;
     border: 2px solid #fff;
 }
+
+@media (max-width: 768px) {
+    .parking-container {
+        margin-right: 2rem;
+        transform: scale(0.30);
+    }
+}

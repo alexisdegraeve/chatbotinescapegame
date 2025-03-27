@@ -1,279 +1,287 @@
-.matches-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.5);
-    margin-bottom: 20rem;
-    margin-right: 50%;
-}
-
-.pos-1 {
-    position: absolute;
-    left: 5rem;
-}
-
-.pos-2 {
-    position: absolute;
-    left: 11rem;
-    margin-bottom: 10rem;
-    transform: rotate(90deg);
-    z-index: 20;
-}
-
-.pos-3 {
-    position: absolute;
-    left: 11rem;
-    margin-top: 12rem;
-    transform: rotate(90deg);
-    z-index: 20;
-}
-
-.pos-4 {
-    position: absolute;
-    left: 11rem;
-    margin-top: 36rem;
-    transform: rotate(90deg);
-}
-
-.pos-5 {
-    position: absolute;
-    left: 16rem;
-    margin-top: 24rem;
-}
-
-.pos-6 {
-    position: absolute;
-    left: 26rem;
-    margin-top: 12rem;
-}
-
-.pos-7 {
-    position: absolute;
-    left: 26rem;
-    margin-top: 12rem;
-    transform: rotate(90deg);
-}
-
-.pos-8 {
-    position: absolute;
-    left: 45rem;
-}
-
-.pos-9 {
-    position: absolute;
-    left: 39rem;
-    margin-bottom: 10rem;
-    transform: rotate(90deg);
-}
-
-.pos-10 {
-    position: absolute;
-    left: 45rem;
-    margin-top: 24rem;
-}
-
-.pos-11 {
-    position: absolute;
-    left: 56rem;
-    margin-top: 12rem;
-    transform: rotate(90deg);
-}
-
-.pos-12 {
-    position: absolute;
-    left: 56rem;
-    margin-top: 17rem;
-    transform: rotate(90deg);
-}
-
-.pos-13 {
-    position: absolute;
-    left: 76rem;
-}
-
-.pos-14 {
-    position: absolute;
-    left: 71rem;
-    margin-bottom: 10rem;
-    transform: rotate(90deg);
-}
-
-.pos-15 {
-    position: absolute;
-    left: 71rem;
-    margin-top: 12rem;
-    transform: rotate(90deg);
-}
-
-.pos-16 {
-    position: absolute;
-    left: 71rem;
-    margin-top: 36rem;
-    transform: rotate(90deg);
-}
-
-.pos-17 {
-    position: absolute;
-    left: 65rem;
-    margin-top: 24rem;
-}
-
-.matches {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .head {
-        height: 30px;
-        width: 20px;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        background-color: #cd342c;
-        border-bottom-left-radius: 35%;
-        border-bottom-right-radius: 35%;
-        box-shadow: inset 0 0 4px 0 #440e0b;
+    .matches-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.5);
+        margin-bottom: 20rem;
+        margin-right: 50%;
     }
-    .body {
-        height: 165px;
-        width: 10px;
-        background-color: #e2c062;
-        box-shadow: inset 0 0 4px 0 #44391b;
+    
+    .pos-1 {
+        position: absolute;
+        left: 5rem;
     }
-}
-
-.sink_green2 {
-    background-size: contain;
-    position: absolute;
-    right: 10rem;
-    bottom: 0rem;
-    z-index: 0;
-}
-
-.sink_green1 {
-    position: absolute;
-    left: 10rem;
-    top: 4.6rem;
-    transform: scaleY(-1);
-    -webkit-animation: myanim2 1s normal linear forwards;
-    -moz-animation: myanim2 1s normal linear forwards;
-    -o-animation: myanim2 1s normal linear forwards;
-    animation: myanim2 1s normal linear forwards;
-}
-
-.enigme4 {
-    background-color: #6fc9e7;
-    height: 84.4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
-}
-
-.porte_hobbit {
-    height: 461px;
-    width: 548px;
-    background-image: url(/assets/img/porte_hobbit.png);
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-filter: drop-shadow(0 5px 5px #222);
-    filter: drop-shadow(0 5px 5px #222);
-    position: absolute;
-    bottom: 4rem;
-}
-
-.porte {
-    height: 461px;
-    width: 548px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 3rem;
-}
-
-.porte_hobbit_cadre {
-    height: 100%;
-    width: 100%;
-    background-image: url(/assets/img/porte_hobbit_cadre.png);
-    -webkit-filter: drop-shadow(0 5px 5px #222);
-    filter: drop-shadow(0 5px 5px #222);
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-.porte_hobbit_interieur {
-    height: 100%;
-    width: 100%;
-    background-image: url(/assets/img/porte_hobbit_interieur.png);
-    position: absolute;
-    background-repeat: no-repeat;
-    transform: rotateY(0deg);
-    transform-origin: 450px 350px;
-}
-
-.full-grass {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 0;
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        box-shadow: 0 0 8px #fff, inset 0 0 8px #fff;
+    
+    .pos-2 {
+        position: absolute;
+        left: 11rem;
+        margin-bottom: 10rem;
+        transform: rotate(90deg);
+        z-index: 20;
     }
-    50% {
-        box-shadow: 0 0 16px #fff, inset 0 0 14px #ea4c89;
+    
+    .pos-3 {
+        position: absolute;
+        left: 11rem;
+        margin-top: 12rem;
+        transform: rotate(90deg);
+        z-index: 20;
     }
-    100% {
-        box-shadow: 0 0 8px #fff, inset 0 0 8px #ea4c89;
+    
+    .pos-4 {
+        position: absolute;
+        left: 11rem;
+        margin-top: 36rem;
+        transform: rotate(90deg);
     }
-}
-
-.inner {
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
-    -webkit-animation: pulse 2s linear 1s infinite;
-}
-
-.inner p {
-    display: block;
-    text-align: center;
-    line-height: 100px;
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 24px;
-    color: #ea4c89;
-    text-shadow: 0 0 4px #ea4c89;
-}
-
-.circle {
-    display: flex;
-    width: 10rem;
-    height: 10rem;
-    /* margin: 30px; */
-    border-radius: 50%;
-    box-shadow: 0px 0px 9px 4px #747DE8;
-    animation: glow 1.5s linear infinite alternate;
-}
-
-@keyframes glow {
-    to {
-        box-shadow: 0px 0px 30px 20px #535FED;
+    
+    .pos-5 {
+        position: absolute;
+        left: 16rem;
+        margin-top: 24rem;
     }
-}
-
-.simon {
-    align-self: flex-start;
-}
-
-.anim-matches-nine {
-    left: 16rem;
-    margin-top: 0rem;
-    transition: all 0.5s ease;
-}
+    
+    .pos-6 {
+        position: absolute;
+        left: 26rem;
+        margin-top: 12rem;
+    }
+    
+    .pos-7 {
+        position: absolute;
+        left: 26rem;
+        margin-top: 12rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-8 {
+        position: absolute;
+        left: 45rem;
+    }
+    
+    .pos-9 {
+        position: absolute;
+        left: 39rem;
+        margin-bottom: 10rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-10 {
+        position: absolute;
+        left: 45rem;
+        margin-top: 24rem;
+    }
+    
+    .pos-11 {
+        position: absolute;
+        left: 56rem;
+        margin-top: 12rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-12 {
+        position: absolute;
+        left: 56rem;
+        margin-top: 17rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-13 {
+        position: absolute;
+        left: 76rem;
+    }
+    
+    .pos-14 {
+        position: absolute;
+        left: 71rem;
+        margin-bottom: 10rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-15 {
+        position: absolute;
+        left: 71rem;
+        margin-top: 12rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-16 {
+        position: absolute;
+        left: 71rem;
+        margin-top: 36rem;
+        transform: rotate(90deg);
+    }
+    
+    .pos-17 {
+        position: absolute;
+        left: 65rem;
+        margin-top: 24rem;
+    }
+    
+    .matches {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .head {
+            height: 30px;
+            width: 20px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-color: #cd342c;
+            border-bottom-left-radius: 35%;
+            border-bottom-right-radius: 35%;
+            box-shadow: inset 0 0 4px 0 #440e0b;
+        }
+        .body {
+            height: 165px;
+            width: 10px;
+            background-color: #e2c062;
+            box-shadow: inset 0 0 4px 0 #44391b;
+        }
+    }
+    
+    .sink_green2 {
+        background-size: contain;
+        position: absolute;
+        right: 10rem;
+        bottom: 0rem;
+        z-index: 0;
+    }
+    
+    .sink_green1 {
+        position: absolute;
+        left: 10rem;
+        top: 4.6rem;
+        transform: scaleY(-1);
+        -webkit-animation: myanim2 1s normal linear forwards;
+        -moz-animation: myanim2 1s normal linear forwards;
+        -o-animation: myanim2 1s normal linear forwards;
+        animation: myanim2 1s normal linear forwards;
+    }
+    
+    .enigme4 {
+        background-color: #6fc9e7;
+        height: 84.4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#6fc9e7, #d0f1fc, #9cdcef 80%, #1c360e 100%);
+    }
+    
+    .porte_hobbit {
+        height: 461px;
+        width: 548px;
+        background-image: url(/assets/img/porte_hobbit.png);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-filter: drop-shadow(0 5px 5px #222);
+        filter: drop-shadow(0 5px 5px #222);
+        position: absolute;
+        bottom: 4rem;
+    }
+    
+    .porte {
+        height: 461px;
+        width: 548px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 3rem;
+    }
+    
+    .porte_hobbit_cadre {
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/img/porte_hobbit_cadre.png);
+        -webkit-filter: drop-shadow(0 5px 5px #222);
+        filter: drop-shadow(0 5px 5px #222);
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    
+    .porte_hobbit_interieur {
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/img/porte_hobbit_interieur.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        transform: rotateY(0deg);
+        transform-origin: 450px 350px;
+    }
+    
+    .full-grass {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    @-webkit-keyframes pulse {
+        0% {
+            box-shadow: 0 0 8px #fff, inset 0 0 8px #fff;
+        }
+        50% {
+            box-shadow: 0 0 16px #fff, inset 0 0 14px #ea4c89;
+        }
+        100% {
+            box-shadow: 0 0 8px #fff, inset 0 0 8px #ea4c89;
+        }
+    }
+    
+    .inner {
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+        -webkit-animation: pulse 2s linear 1s infinite;
+    }
+    
+    .inner p {
+        display: block;
+        text-align: center;
+        line-height: 100px;
+        font-family: sans-serif;
+        font-weight: 100;
+        font-size: 24px;
+        color: #ea4c89;
+        text-shadow: 0 0 4px #ea4c89;
+    }
+    
+    .circle {
+        display: flex;
+        width: 10rem;
+        height: 10rem;
+        /* margin: 30px; */
+        border-radius: 50%;
+        box-shadow: 0px 0px 9px 4px #747DE8;
+        animation: glow 1.5s linear infinite alternate;
+    }
+    
+    @keyframes glow {
+        to {
+            box-shadow: 0px 0px 30px 20px #535FED;
+        }
+    }
+    
+    .simon {
+        align-self: flex-start;
+    }
+    
+    .anim-matches-nine {
+        left: 16rem;
+        margin-top: 0rem;
+        transition: all 0.5s ease;
+    }
+    
+    @media (max-width: 768px) {
+        .matches-container {
+            transform: scale(0.25);
+            margin-bottom: 10rem;
+            margin-right: 90%;
+        }
+    }

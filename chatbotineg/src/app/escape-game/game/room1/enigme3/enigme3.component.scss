@@ -198,3 +198,10 @@
 .simon {
     align-self: flex-start;
 }
+
+@media (max-width: 768px) {
+    .addition {
+        margin-bottom: 2rem;
+        transform: scale(0.7);
+    }
+}
