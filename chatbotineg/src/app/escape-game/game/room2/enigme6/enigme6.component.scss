@@ -539,6 +539,7 @@
                             .panel_exit {
                                 top: 17.8rem;
                                 bottom: auto;
+                                height: 35px;
                             }
                             .barque {
                                 width: 14rem;
@@ -547,10 +548,6 @@
                                 &.rive-droite {
                                     margin-left: calc(100% - 10rem);
                                 }
-                            }
-                            .full-grass {
-                                transform: scale(0.5);
-                                width: 200%;
                             }
                             .sink_red {
                                 width: 18vw;
@@ -565,5 +562,12 @@
                             }
                             .bowser {
                                 left: 6rem;
+                            }
+                            .rock01,
+                            .rock02 {
+                                transform: scale(0.25);
+                            }
+                            .grass2 {
+                                transform: scale(0.25);
                             }
                         }
