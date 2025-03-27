@@ -1,7 +1,9 @@
 <div class="screen">
     <app-menu (toggle)="changeToggleChatbot($event)"></app-menu>
     <app-information-bar (stopTimerEvent)="stopGame()"></app-information-bar>
-    <router-outlet></router-outlet>
+    <div class="middle">
+        <router-outlet></router-outlet>
+    </div>
     <app-footer></app-footer>
 </div>
 

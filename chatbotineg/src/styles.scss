@@ -3,8 +3,12 @@
             @use './scss/sprites.scss';
             @use './scss/scrollbar.scss';
             @import '@fortawesome/fontawesome-free/css/all.min.css';
-            html {
+            html,
+            body {
                 height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
             }
             
             body {
@@ -15,6 +19,12 @@
                 overflow-x: hidden;
                 --bs-border-color: #111;
                 height: 100%;
+            }
+            
+            app-root {
+                display: flex;
+                flex-direction: column;
+                flex: 1; // Permet de prendre toute la hauteur
             }
             
             .scroll {
@@ -74,5 +84,12 @@
                 }
                 .fs-4 {
                     font-size: 1rem !important;
+                }
+                .containter {
+                    .row {
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
                 }
             }

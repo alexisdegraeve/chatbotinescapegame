@@ -541,10 +541,12 @@
                                 bottom: auto;
                             }
                             .barque {
-                                transform: scaleX(-0.5);
+                                width: 14rem;
                             }
                             .move-barque {
-                                transform: scale(0.5);
+                                &.rive-droite {
+                                    margin-left: calc(100% - 10rem);
+                                }
                             }
                             .full-grass {
                                 transform: scale(0.5);
@@ -552,5 +554,16 @@
                             }
                             .sink_red {
                                 width: 18vw;
+                            }
+                            .sink_green {
+                                transform: scaleY(-0.25);
+                                transform-origin: 0 5rem;
+                            }
+                            .mushroom,
+                            .luigi {
+                                left: 6rem;
+                            }
+                            .bowser {
+                                left: 6rem;
                             }
                         }

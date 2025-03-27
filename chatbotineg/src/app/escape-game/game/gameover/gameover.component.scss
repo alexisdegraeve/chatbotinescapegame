@@ -20,10 +20,22 @@
 @media (max-width: 768px) {
     .title-mario {
         font-size: 2.5rem;
-        margin-left: 6rem;
+        margin-left: 8rem;
+        flex-wrap: wrap;
     }
     .game-over-mario {
         width: 176px;
         background-size: contain;
+        transform-origin: left;
+    }
+    .container {
+        .row {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    button {
+        margin-top: 2rem;
     }
 }

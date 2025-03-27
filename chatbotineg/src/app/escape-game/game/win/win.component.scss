@@ -20,8 +20,20 @@
     .title-mario {
         font-size: 2.5rem;
         margin-left: 6rem;
+        flex-wrap: wrap;
     }
     .super-mario-win {
         width: 76px;
+        transform-origin: left;
+    }
+    .container {
+        .row {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    button {
+        margin-top: 2rem;
     }
 }
