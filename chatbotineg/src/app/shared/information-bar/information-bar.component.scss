@@ -54,7 +54,7 @@
 }
 
 @media (max-width: 768px) {
-    .score {
-        font-size: 3vh;
+    .information-bar {
+        transform: scale(0.8);
     }
 }

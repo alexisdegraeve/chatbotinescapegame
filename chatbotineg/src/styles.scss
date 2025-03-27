@@ -62,8 +62,17 @@
                 max-height: 75vh;
             }
             
-            @media screen and (max-width: 580px) {
+            @media (max-width: 768px) {
                 .title-mario {
                     font-size: 5.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                .btn {
+                    --bs-btn-font-size: 1rem !important;
+                }
+                .fs-4 {
+                    font-size: 1rem !important;
                 }
             }
